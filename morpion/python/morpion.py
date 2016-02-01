@@ -1,11 +1,10 @@
-import string
+# coding=utf-8
 
 # place le symbole du joueur sur la case demandée et retourne
 # la valeur de tour (inchangée sauf si la case demandée
 # est remplie)
 def placer(tour, nom_j1, nom_j2):
-    global A1, A2, A3, B1, B2, B3
-    global C1, C2, C3, case_remplie
+    global A1, A2, A3, B1, B2, B3, C1, C2, C3, case_remplie
 
     # on regarde c'est le tour de quel joueur.
     if tour%2 == 0:
@@ -16,7 +15,7 @@ def placer(tour, nom_j1, nom_j2):
         nom = nom_j2
         
     texte = nom + ", où voulez vous placer (ex: A1) : "
-    case = input(texte)
+    case = raw_input(texte)
     case = case.upper()
 
     # on place le symbole à la case demandée
@@ -51,15 +50,16 @@ def placer(tour, nom_j1, nom_j2):
         print ('la case est déjà remplie, ou vous n avez pas tapez une case valide.')
 # affiche le morpion
 
-def affichage(A1,A2,A3,B1,B2,B3,C1,C2,C3):
-    print ('\n  A   B   C')
+def affichage():
+    global A1, A2, A3, B1, B2, B3, C1, C2, C3, case_remplie
+    print ('\n  A     B      C')
     print ('########################')
-    print ('#",A1,"|",B1,"|",C1,"# 1')
+    print ('# %s | %s | %s # 1' % (A1, A2, A3))
     print ('#------+------+--------#')
-    print ('#",A2,"|",B2,"|",C2,"# 2')
+    print ('# %s | %s | %s # 2' % (B1, B2, B3))
     print ('#------+------+--------#')
-    print ('#",A3,"|",B3,"|",C3,"# 3')
-    print ('#############\n')
+    print ("# %s | %s | %s # 3" % (C1, C2, C3))
+    print ('########################\n')
 
 # vérifie si 3 symboles identiques sont alignés
 # et modifie "fini" si c'est le cas.
@@ -67,9 +67,9 @@ def verification(A1,A2,A3,B1,B2,B3,C1,C2,C3, nom_j1, nom_j2):
     global fini
     if ((A1 == A2 and A1 == A3) or (A1 == B1 and A1 == C1) or (A1 == B2 and A1 == C3)) and A1 != " ":
         if A1 == "X":
-            print ('Bravo", nom_j1, "vous avez gagné')
+            print ('Bravo ' +  nom_j1 + ' vous avez gagné')
         else :
-            print ('Bravo", nom_j2, "vous avez gagné')
+            print ('Bravo %s vous avez gagné' % nom_j2)
         fini = True
     elif ((B1 == B2 and B2 == B3) or (A2 == B2 and B2 == C2) or (A3 == B2 and B2 == C1)) and B2 != " ":
         if B2 == "X":
@@ -86,20 +86,23 @@ def verification(A1,A2,A3,B1,B2,B3,C1,C2,C3, nom_j1, nom_j2):
 
 tour_joueur = 0
 fini = False
+
 A1, A2, A3 = " ", " ", " "
 B1, B2, B3 = " ", " ", " "
 C1, C2, C3 = " ", " ", " "
-case_remplie = 0
-nom_joueur1 = input("entrez le nom du 1er joueur, vous aurez les X: ")
-nom_joueur2 = input("entrez le nom du 2eme joueur, vous aurez les O: ")
 
-affichage(A1,A2,A3,B1,B2,B3,C1,C2,C3)
+case_remplie = 0
+
+nom_joueur1 = raw_input("entrez le nom du 1er joueur, vous aurez les X: ")
+nom_joueur2 = raw_input("entrez le nom du 2eme joueur, vous aurez les O: ")
+
+affichage()
+
 while not fini :
-    tour_joueur = placer(tour_joueur, nom_joueur1, nom_joueur2)
-    tour_joueur = +1
-    affichage(A1,A2,A3,B1,B2,B3,C1,C2,C3)
+    placer(tour_joueur, nom_joueur1, nom_joueur2)
+    tour_joueur += 1
+    affichage()
     verification(A1,A2,A3,B1,B2,B3,C1,C2,C3, nom_joueur1, nom_joueur2)
     if case_remplie == 9 and not fini:
         print ('match nul')
         fini = True
-
