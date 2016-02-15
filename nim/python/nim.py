@@ -1,33 +1,17 @@
+def batons_restant(batons, baton_retirer):
+    return batons - int(baton_retirer)
 
-def pile():
-    total = nombre.lenght
-    return total
+def tour_de_jeu(joueur, batons):
+    baton = raw_input("joueur " + joueur + ", combien tu enleve de baton ? ")
+    batons = batons_restant(batons, baton)
+    print "il reste", batons, "batons."
+    return batons
 
-def tour(joueur):
-    if joueur == 1:
-        return 2
-    else:
-        return 1
+if __name__ == "__main__":
+    batons = int(raw_input("on fait une partie pour combien de baton ? "))
 
-def choix_possible():
-    print "choisissez le nombre de batonet a retirer !"
-    if argv > 3 or argv < 1:
-        print "choisissez un nombre entre 1 et 3 !"
-    else:
-        return (argv)
+    print "on commence une partie avec", batons
 
-def nim():
-    joueur = 0
-    while 1:
-        tour(joueur)
-        while total != 1:
-            if valeur == 1:
-                total = total - 1
-            elif valeur == 2:
-                total = total - 2
-            else:
-                total = total - 3
-        if tour_joueur == 1:
-            print "le joueur 2 gagne"
-        else:
-            print "le joueur 1 gagne"
+    batons = tour_de_jeu("1", batons)
+    batons = tour_de_jeu("2", batons)
+
