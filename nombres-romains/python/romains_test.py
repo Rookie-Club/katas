@@ -1,9 +1,14 @@
 import unittest
 
 def convertis(nombre):
+    if nombre <= 0: return ""
+    if nombre > 3: return "IV"
     return "I" * nombre
 
 class RomainsTest(unittest.TestCase):
+    def test_0_donne_vide(self):
+        self.assertEqual("", convertis(0))
+
     def test_1_donne_I(self):
         self.assertEqual("I", convertis(1))
 
