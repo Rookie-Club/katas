@@ -1,9 +1,7 @@
 import unittest
 
 def convertis(nombre):
-    if nombre == 2:
-        return "II"
-    return "I"
+    return "I" * nombre
 
 class RomainsTest(unittest.TestCase):
     def test_1_donne_I(self):
@@ -14,6 +12,9 @@ class RomainsTest(unittest.TestCase):
 
     def test_3_donne_III(self):
         self.assertEqual("III", convertis(3))
+
+    def test_4_donne_IV(self):
+        self.assertEqual("IV", convertis(4))
 
 if __name__ == "__main__":
     unittest.main()
