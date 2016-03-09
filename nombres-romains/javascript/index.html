@@ -6,9 +6,9 @@
     console.log("Han charged first");
     window.onload = function () {
         console.log("je suis dedans, la page est chargée");
-        document.getElementById("convert").onclick = function () {
+        convert.onclick = function () {
             console.log("je suis clické");
-            document.getElementById("converted_number").innerHTML = document.getElementById("number_to_convert").value;
+            converted_number.innerHTML = number_to_convert.value;
             return false;
         }
     }
