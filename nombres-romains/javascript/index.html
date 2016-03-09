@@ -3,15 +3,20 @@
 <title>Convertisseur de numération Arabe - Romaine</title>
 
 <script>
+    console.log("Han charged first");
     window.onload = function () {
         console.log("je suis dedans, la page est chargée");
+        document.getElementById("convert").onclick = function () {
+            console.log("je suis clické");
+            return false;
+        }
     }
 </script>
 
 <form action="#">
     <label for="number_to_convert">saisir un chiffre arabe</label>
     <input type="text" id="number_to_convert" name="number_joe">
-    <input type="submit" value="go">
+    <input type="submit" value="go" id="convert">
 </form>
 
 <p id="converted_number"></p>
