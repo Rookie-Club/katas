@@ -8,7 +8,7 @@
         console.log("je suis dedans, la page est chargée");
         document.getElementById("convert").onclick = function () {
             console.log("je suis clické");
-            document.getElementById("converted_number").innerHTML = "coucou";
+            document.getElementById("converted_number").innerHTML = document.getElementById("number_to_convert").value;
             return false;
         }
     }
@@ -16,7 +16,7 @@
 
 <form action="#">
     <label for="number_to_convert">saisir un chiffre arabe</label>
-    <input type="text" id="number_to_convert" name="number_joe">
+    <input type="number" min="0" id="number_to_convert" name="number_joe">
     <input type="submit" value="go" id="convert">
 </form>
 
