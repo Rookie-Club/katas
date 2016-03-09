@@ -6,7 +6,7 @@
     console.log("Han charged first");
     window.onload = function () {
         console.log("je suis dedans, la page est chargée");
-        convert.onclick = function () {
+        monform.onsubmit = function () {
             console.log("je suis clické");
             converted_number.innerHTML = number_to_convert.value;
             return false;
@@ -14,7 +14,7 @@
     }
 </script>
 
-<form action="#">
+<form id="monform" action="#">
     <label for="number_to_convert">saisir un chiffre arabe</label>
     <input type="number" min="0" id="number_to_convert" name="number_joe">
     <input type="submit" value="go" id="convert">
