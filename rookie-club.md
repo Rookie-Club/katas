@@ -1,4 +1,4 @@
-# Patouilles de p3l
+# Rookie Club
 
 ## Objectif
 
@@ -18,7 +18,7 @@ autodidactes qui n'osent pas se présenter auprès des entreprises qui recrutent
 ## Déroulé
 
 Sous la forme d'une formation en alternance : 3 jours chez nous, 7 jours chez
-vous, «patouilles de p3l» propose un accompagnement sur 12 à 24 mois. Il n'y a
+vous, Le rookie club propose un accompagnement sur 12 à 24 mois. Il n'y a
 pas de «promo» en tant que telle, la formation tourne en continue, avec une
 pédagogie non-linéaire basée sur des allers-retours sur différents sujets de
 programmation, orientés **«bonne pratique»**. Cela permet à tous de pouvoir
