@@ -3,7 +3,7 @@
 ## Objectif
 
 Accompagner un/e développeur/se junior pour lui permettre de gagner en
-autonomie et d'apprendre les bonne pratique le plus rapidement possible, sur
+autonomie et d'apprendre les bonnes pratiques le plus rapidement possible, sur
 l'environnement utilisé chez son employeur. 
 
 
@@ -11,7 +11,7 @@ l'environnement utilisé chez son employeur.
 
 Cette formation s'adresse d'une part aux entreprises qui souhaitent **recruter
 une développeuse ou un développeur junior sans prendre de risque**, et aux
-autodidactes qui souhaite être accompagner durant leurs premiers pas.
+autodidactes qui souhaitent être accompagnés durant leurs premiers pas.
 
 
 ## Déroulé
@@ -23,7 +23,7 @@ l'accent sur les bonnes pratiques du métier.  **Chaque apprenant utilisera
 principalement les technologies utilisées chez son employeur**. Ce qui signifie
 que certains feront du Python, d'autres du Java, ou encore du Javascript.
 L'idée est de permettre aux apprenants d'être le plus rapidement possible
-autonome dans leur contexte professionnel. 
+autonomes dans leur contexte professionnel. 
 
 
 ## Pédagogie
@@ -44,7 +44,7 @@ Les trois axes sont :
 
 ### Programmation
 
-Les diférents points de repère sur cet axe sont : 
+Les différents points de repère sur cet axe sont : 
 
 * Lire du code
 * Écrire du code 
@@ -64,7 +64,7 @@ Nous programmons dans des contextes divers. Il est important d'arriver à les
 distinguer pour pouvoir apporter une réponse appropriée. Nous avons listé 3
 contextes principaux, et 1 contexte supplémentaire : 
 
-* Programmer pour soit (seul, en amateur ou pas)
+* Programmer pour soi (seul, en amateur ou pas)
 * Programmer avec d'autres (en équipe, pluridisciplinaire, avec un graphiste
   par exemple, ou un chef de projet)
 * Programmer pour d'autres (prise en compte du client, des utilisateurs, des
@@ -72,7 +72,7 @@ contextes principaux, et 1 contexte supplémentaire :
 * Le dernier contexte est celui où nous allons transmettre nos connaissances en
   programmation. 
 
-Les attitudes dans ce contexte doivent être différentes, l'objectif recheché
+Les attitudes dans ce contexte doivent être différentes, l'objectif recherché
 n'est pas le même.
 
 
@@ -92,11 +92,11 @@ programmation.
   les choses apprises, et imaginer les points d'améliorations futurs
 
 
-## Cout
+## Coût
 
-La formation peut duré de 12 à 24 mois, à raison d'une soixantaine de jours par
+La formation peut durer de 12 à 24 mois, à raison d'une soixantaine de jours par
 an. La facturation peut être mensuelle ou trimestrielle. Nous ferons parvenir
-une facture des jours de formation, accompagnés des feuilles d'émargement. 
+une facture des jours de formation, accompagnée des feuilles d'émargement. 
 
 Le montant est de **140 € HT / jour de formation**, pour 7 heures de formation
 par jour, soit 20 € HT / heure.
@@ -129,9 +129,8 @@ L'équipe **/ut7** est composée de cinq praticiens :
 * Étienne Charignon,
 * Yannick François,
 * Emmanuel Gaillot,
-* Jonathan Perret
+* Jonathan Perret,
 * Raphaël Pierquin
- 
 
 Nous œuvrons ensemble à la diffusion des principes et pratiques de l'eXtreme
 Programming (en particulier) et des méthodes agiles (en général) depuis plus de
@@ -141,8 +140,8 @@ autant que cela nous est possible : auto-organisation, amélioration continue,
 excellence technique, contextualisation des pratiques.
 
 
-Toute l'équipe est suceptible d'intervenir durant la formation, cependant, le
-role du coordinateur est tenu par Yannick François. Si vous avez des questions
+Toute l'équipe est susceptible d'intervenir durant la formation, cependant, le
+rôle du coordinateur est tenu par Yannick François. Si vous avez des questions
 sur la formation n'hésitez pas à nous contacter
 [paris@ut7.fr](mailto:paris@ut7.fr).
 
