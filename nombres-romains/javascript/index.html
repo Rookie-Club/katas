@@ -4,12 +4,14 @@
 
 <title>Convertisseur</title>
 
-<label>
-    Entrer un nombre romain
-    <input type="text" id="romain">
-</label>
+<form>
+    <label>
+        Entrer un nombre romain
+        <input type="text" id="romain">
+    </label>
 
-<button id="convertisseur">convertis</button>
+    <button type="submit" id="convertisseur">convertis</button>
+</form>
 
 <div id="resultat"></div>
 
@@ -17,7 +19,12 @@
     window.onload = function () {
         convertisseur.onclick = function () {
             console.count("J'ai cliqué");
-            resultat.innerHTML = romain.value;
+            resultat.innerHTML = convertis(romain.value);
+            return false;
         }
+    }
+
+    var convertis = function (romain) {
+        return romain;
     }
 </script>
