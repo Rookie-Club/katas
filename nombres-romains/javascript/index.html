@@ -6,7 +6,7 @@
 
 <label>
     Entrer un nombre romain
-    <input type="text">
+    <input type="text" id="romain">
 </label>
 
 <button id="convertisseur">convertis</button>
@@ -14,12 +14,10 @@
 <div id="resultat"></div>
 
 <script>
-    var init = function () {
+    window.onload = function () {
         convertisseur.onclick = function () {
             console.count("J'ai cliqué");
+            resultat.innerHTML = romain.value;
         }
-        resultat.innerHTML = "Un résultat bidon";
-        console.info("C'est fini !");
     }
-    init();
 </script>
