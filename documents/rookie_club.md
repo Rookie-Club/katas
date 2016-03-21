@@ -1,39 +1,29 @@
-# Patouilles de p3l
+# Accompagnement agile de jeunes recrues
 
 ## Objectif
 
-Proposer une formation pour les développeurs et développeuses junior.
+Accompagner un/e développeur/se junior pour lui permettre de gagner en
+autonomie et d'apprendre les bonnes pratiques le plus rapidement possible, sur
+l'environnement utilisé chez son employeur. 
 
-Si vous acceptez de recruter un développeur ou une développeuse autodidacte,
-nous vous proposons un accompagnement qui lui permettra de gagner en autonomie
-le plus rapidement possible, sur l'environnement utilisé chez vous. 
 
 ## Public visé
 
 Cette formation s'adresse d'une part aux entreprises qui souhaitent **recruter
 une développeuse ou un développeur junior sans prendre de risque**, et aux
-autodidactes qui n'osent pas se présenter auprès des entreprises qui recrutent.
+autodidactes qui souhaitent être accompagnés durant leurs premiers pas.
 
 
 ## Déroulé
 
-Sous la forme d'une formation en alternance : 3 jours chez nous, 7 jours chez
-vous, «patouilles de p3l» propose un accompagnement sur 12 à 24 mois. Il n'y a
-pas de «promo» en tant que telle, la formation tourne en continue, avec une
-pédagogie non-linéaire basée sur des allers-retours sur différents sujets de
-programmation, orientés **«bonne pratique»**. Cela permet à tous de pouvoir
-venir à tout moment, sans être perdu et sans rendre les cours inintéressant
-pour ceux qui sont là depuis plus longtemps.
-
-**Chaque apprenant mettra l'accent sur les technologies utilisées chez son
-employeur**. Ce qui signifie que certains feront du Python, d'autre du Java, ou
-encore du Javascript. L'idée est de permettre aux apprenants d'être le plus
-rapidement autonome dans le contexte professionnel. 
-
-Lors de travaux en groupe, nous travaillerons sur des technologies parfois en
-dehors de l'environnement technologique de l'entreprise pour certains, mais
-beaucoup de temps sera consacré à un travail personnel sur les technologies de
-l'entreprise accueillante 
+Sous la forme d'une formation en alternance, le **Rookie Club** propose un
+accompagnement entre 12 et 24 mois. Au sein d'un groupe de 10 personnes
+maximum, nous aborderons tous les aspects de la programmation, et mettrons
+l'accent sur les bonnes pratiques du métier.  **Chaque apprenant utilisera
+principalement les technologies utilisées chez son employeur**. Ce qui signifie
+que certains feront du Python, d'autres du Java, ou encore du Javascript.
+L'idée est de permettre aux apprenants d'être le plus rapidement possible
+autonomes dans leur contexte professionnel. 
 
 
 ## Pédagogie
@@ -54,11 +44,18 @@ Les trois axes sont :
 
 ### Programmation
 
-Les diférents points de repère sur cet axe sont : Lire du code, écrire du code,
-exécuter du code, versionner du code, organiser du code, corriger du code,
-améliorer du code. Nous pensons que ce sont les grandes activités de la
-programmation. Cela s'applique à tous les langages et à priori à tous les
-contextes.
+Les différents points de repère sur cet axe sont : 
+
+* Lire du code
+* Écrire du code 
+* Exécuter du code
+* Versionner du code
+* Organiser du code
+* Corriger du code
+* Améliorer du code
+
+Nous pensons que ce sont les grandes activités de la programmation. Cela
+s'applique à tous les langages et à priori à tous les contextes.
 
 
 ### Contexte
@@ -67,15 +64,15 @@ Nous programmons dans des contextes divers. Il est important d'arriver à les
 distinguer pour pouvoir apporter une réponse appropriée. Nous avons listé 3
 contextes principaux, et 1 contexte supplémentaire : 
 
-* programmer pour soit (seul, en amateur ou pas), 
-* programmer avec d'autres (en équipe, pluridisciplinaire, avec un graphiste
-  par exemple, ou un chef de projet),
-* programmer pour d'autres (prise en compte du client, des utilisateurs, des
-  équipes externes qui vont interagir avec le logiciel).
+* Programmer pour soi (seul, en amateur ou pas)
+* Programmer avec d'autres (en équipe, pluridisciplinaire, avec un graphiste
+  par exemple, ou un chef de projet)
+* Programmer pour d'autres (prise en compte du client, des utilisateurs, des
+  équipes externes qui vont interagir avec le logiciel)
 * Le dernier contexte est celui où nous allons transmettre nos connaissances en
   programmation. 
 
-Les attitudes dans ce contexte doivent être différentes, l'objectif recheché
+Les attitudes dans ce contexte doivent être différentes, l'objectif recherché
 n'est pas le même.
 
 
@@ -95,14 +92,14 @@ programmation.
   les choses apprises, et imaginer les points d'améliorations futurs
 
 
-## Cout
+## Coût
 
-La formation peut duré de 12 à 24 mois. La facturation peut être mensuelle ou
-trimestrielle. Nous ferons parvenir une facture des jours de formation,
-accompagnés des feuilles d'émargement. 
+La formation peut durer de 12 à 24 mois, à raison d'une soixantaine de jours par
+an. La facturation peut être mensuelle ou trimestrielle. Nous ferons parvenir
+une facture des jours de formation, accompagnée des feuilles d'émargement. 
 
-Le montant est de **120 € HT / jour de formation**, pour 7 heures de formation
-par jour, soit un peu plus de 17 € HT / heure.
+Le montant est de **140 € HT / jour de formation**, pour 7 heures de formation
+par jour, soit 20 € HT / heure.
 
 Nous travaillons actuellement pour faire reconnaitre notre formation et la
 rendre qualifiante. Nous pensons en effet que les apprenants pourraient en fin
@@ -132,9 +129,8 @@ L'équipe **/ut7** est composée de cinq praticiens :
 * Étienne Charignon,
 * Yannick François,
 * Emmanuel Gaillot,
-* Jonathan Perret
+* Jonathan Perret,
 * Raphaël Pierquin
- 
 
 Nous œuvrons ensemble à la diffusion des principes et pratiques de l'eXtreme
 Programming (en particulier) et des méthodes agiles (en général) depuis plus de
@@ -144,8 +140,8 @@ autant que cela nous est possible : auto-organisation, amélioration continue,
 excellence technique, contextualisation des pratiques.
 
 
-Toute l'équipe est suceptible d'intervenir durant la formation, cependant, le
-role du coordinateur est tenu par Yannick François. Si vous avez des questions
+Toute l'équipe est susceptible d'intervenir durant la formation, cependant, le
+rôle du coordinateur est tenu par Yannick François. Si vous avez des questions
 sur la formation n'hésitez pas à nous contacter
 [paris@ut7.fr](mailto:paris@ut7.fr).
 
@@ -156,4 +152,3 @@ La formation se déroule dans les locaux de la coopérative **/ut7**, une socié
 de conseil en informatique et un **organisme agréé de formation** (numéro 11 75
 44738 75). La «boutique» se situe au **82 passage du Caire, dans le 2e
 arrondissement de Paris**.
-
