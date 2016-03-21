@@ -9,12 +9,15 @@
     <input type="text">
 </label>
 
-<button>convertis</button>
+<button id="convertisseur">convertis</button>
 
 <div id="resultat"></div>
 
 <script>
     var init = function () {
+        convertisseur.onclick = function () {
+            console.count("J'ai cliqué");
+        }
         resultat.innerHTML = "Un résultat bidon";
         console.info("C'est fini !");
     }
