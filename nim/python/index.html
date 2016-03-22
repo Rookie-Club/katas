@@ -4,3 +4,16 @@
 <title>Nim !</title>
 
 <div id="les-choses-arrivent-la"></div>
+
+<script>
+    var insertionHTML = document.getElementById("les-choses-arrivent-la"),
+        i,
+        codeAInserer = "";
+
+    for (i = 0; i < 10; i++) {
+
+        codeAInserer = codeAInserer + "<div id='element-" + i + "'></div>";
+    }
+
+    insertionHTML.innerHTML = codeAInserer;
+</script>
