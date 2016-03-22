@@ -1,10 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "2x+cool"
+    return render_template("nim.html")
 
 @app.route("/jouer")
 def jouer():
