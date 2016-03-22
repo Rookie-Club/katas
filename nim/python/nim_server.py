@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("nim.html")
+    return render_template("nim.html", last_turn = 0)
 
 @app.route("/jouer")
 def jouer():
