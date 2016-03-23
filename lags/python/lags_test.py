@@ -18,5 +18,10 @@ class LagsTest(unittest.TestCase):
         demande = Demande(0,1,3)
         self.assertEqual(3, gain_max([demande]))
 
+    def test_demande_incompatible(self):
+        demande = Demande(0,1,10)
+        demande_incompatible = Demande(0,1,3)
+        self.assertEqual(False, demande.is_compatible(demande_incompatible))
+
 if __name__ == "__main__":
     unittest.main()
