@@ -2,12 +2,9 @@ import unittest
 
 def gain_max(demandes = []):
     if not demandes: return 0
-    if len(demandes) == 1:
-        return prix(demandes[0])
-    if len(demandes) == 2:
-        return prix(demandes[0]) + prix(demandes[1])
-    if len(demandes) == 3:
-        return prix(demandes[0]) + prix(demandes[1]) + prix(demandes[2])
+    demande = demandes[0]
+    demandes_restantes = demandes[1:]
+    return prix(demande) + gain_max(demandes_restantes)
 
 def prix(demande):
     return demande[2]
