@@ -18,20 +18,25 @@ class LagsTest(unittest.TestCase):
         demande = Demande(0,1,3)
         self.assertEqual(3, gain_max([demande]))
 
-    def test_demande_incompatible(self):
+    def test_demandes_incompatibles(self):
         demande = Demande(0,1,10)
         demande_incompatible = Demande(0,1,3)
         self.assertEqual(False, demande.is_compatible(demande_incompatible))
 
-    def test_depart_1_demande_compatible(self):
+    def test_depart_1_demandes_compatibles(self):
         demande = Demande(0,1,10)
         demande_compatible = Demande(1,1,3)
         self.assertEqual(True, demande.is_compatible(demande_compatible))
 
-    def test_depart_2_demande_compatible(self):
+    def test_depart_2_demandes_compatibles(self):
         demande = Demande(0,1,10)
         demande_compatible = Demande(2,1,3)
         self.assertEqual(True, demande.is_compatible(demande_compatible))
+
+    def test_cumul_2_demandes_compatibles(self):
+        demande = Demande(0,1,10)
+        demande_compatible = Demande(2,1,3)
+        self.assertEqual(13, gain_max([demande, demande_compatible]))
 
 if __name__ == "__main__":
     unittest.main()
