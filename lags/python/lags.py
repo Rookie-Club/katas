@@ -5,9 +5,7 @@ class Demande():
         self.prix = prix
 
     def is_compatible(self, autre_demande):
-        if autre_demande.depart == 1:
-            return True
-        return False
+        return autre_demande.depart >= (self.depart + self.duree)
 
 def gain_max(vols):
     if vols == []:
