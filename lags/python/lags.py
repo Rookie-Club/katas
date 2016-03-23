@@ -7,4 +7,4 @@ class Demande():
 def gain_max(vols):
     if vols == []:
         return 0
-    return 10
+    return vols[0].prix

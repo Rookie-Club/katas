@@ -12,9 +12,11 @@ class LagsTest(unittest.TestCase):
         self.assertEqual(5, demande.duree)
         self.assertEqual(10, demande.prix)
 
-    def test_10_avec_une_demande(self):
+    def test_avec_une_demande(self):
         demande = Demande(0,1,10)
         self.assertEqual(10, gain_max([demande]))
+        demande = Demande(0,1,3)
+        self.assertEqual(3, gain_max([demande]))
 
 if __name__ == "__main__":
     unittest.main()
