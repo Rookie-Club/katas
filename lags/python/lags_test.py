@@ -2,7 +2,10 @@ import unittest
 
 def gain_max(demandes = []):
     if not demandes: return 0
-    return demandes[0][2]
+    return prix(demandes[0])
+
+def prix(demande):
+    return demande[2]
 
 class LagsTest(unittest.TestCase):
     def test_0_sans_demande(self):
