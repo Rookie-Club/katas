@@ -3,10 +3,23 @@
 <meta charset="UTF-8">
 <title>Diamond Kata</title>
 
+<script>
+    window.onload = function () {
+        console.log("La page est chargée");
+        draw.onsubmit = function () {
+            var diamond_letter = diamond_letter_field.value;
+            console.log("Bien reçu");
+            diamond.innerHTML = diamond_letter;
+            console.log(diamond_letter);
+            return false;
+        }
+    }
+</script>
+
 <h1>Diamond Kata</h1>
 
-<form>
-    <input required maxlength="1">
+<form id="draw">
+    <input id="diamond_letter_field" required maxlength="1">
     <button type="submit">Draw a diamond</button>
 </form>
 
