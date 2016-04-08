@@ -5,15 +5,24 @@
 
 <script>
     window.onload = function () {
-        console.log("La page est chargée");
+
+        var drawDiamond = function (letter) {
+            if (letter.match("[a-zA-Z]")) {
+                return letter;
+            } else {
+                return "Vous devez saisir une lettre";
+            }
+        }
+
         draw.onsubmit = function () {
             var diamond_letter = diamond_letter_field.value;
-            console.log("Bien reçu");
-            diamond.innerHTML = diamond_letter;
             console.log(diamond_letter);
+            diamond.innerHTML = drawDiamond(diamond_letter);
             return false;
         }
-    }
+
+
+   }
 </script>
 
 <h1>Diamond Kata</h1>
