@@ -5,7 +5,10 @@ def newGrid(grid):
 
 class GameOfLifeTest(unittest.TestCase):
 
+    def emptyGrid(self):
+        return None
+
     def test_empty_grid(self):
-        self.assertEqual([], newGrid([]))
+        self.assertEqual(self.emptyGrid(), newGrid(self.emptyGrid()))
 
 unittest.main()
