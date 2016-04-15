@@ -1,18 +1,8 @@
-
-def newGrid(grid):
-    newGrid = emptyGrid()
-    for lineIndex, line in enumerate(grid):
-        for cellIndex, cell in enumerate(line):
-
-            if stillAlive(cell):
-                newGrid[lineIndex][cellIndex] = 1
-            else:
-                newGrid[lineIndex][cellIndex] = 0
-
-    return newGrid
-
-def stillAlive(cell):
-    False
+class GameOfLife():
+    def __init__(self, init_grid):
+        self.grid = init_grid
+    def get_next_grid(self):
+        return [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 def emptyGrid():
     return [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
