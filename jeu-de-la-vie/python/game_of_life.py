@@ -4,13 +4,15 @@ def newGrid(grid):
     for lineIndex, line in enumerate(grid):
         for cellIndex, cell in enumerate(line):
 
-            if cell == 1:
-                newGrid[lineIndex][cellIndex] = 0
+            if stillAlive(cell):
+                newGrid[lineIndex][cellIndex] = 1
             else:
-                newGrid[lineIndex][cellIndex] = cell
+                newGrid[lineIndex][cellIndex] = 0
 
     return newGrid
 
+def stillAlive(cell):
+    False
 
 def emptyGrid():
     return [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
