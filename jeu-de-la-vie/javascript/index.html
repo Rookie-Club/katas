@@ -28,7 +28,15 @@
 window.onload = function () {
   console.log("chargement termine");
   onoff.onclick = function () {
-    console.log("demarrage de la simulation")
+    if (onoff.getAttribute("state")) {
+      console.log("fin de la simulation");
+      onoff.removeAttribute("state");
+      onoff.innerHTML = "start simulation";
+    } else {
+      console.log("demarrage de la simulation");
+      onoff.setAttribute("state", "started");
+      onoff.innerHTML = "arret simulation";
+    }
   }
 }
 </script>
