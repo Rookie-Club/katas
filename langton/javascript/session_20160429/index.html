@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<title>Langton</title>
+<script src="src/Fourmi.js"></script>
+
+<canvas id="canvas" height="600" width="600" style="background: brown"></canvas>
+
+<script>
+    var monde = nouveauMonde(150);
+    var tailleCase = 4;
+    var tailleCarre = tailleCase - 1;
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+
+    var dessineCase = function () {
+        var x = monde.positionFourmi().x;
+        var y = monde.positionFourmi().y;
+
+        if (monde.couleurCase(x, y) === "noir")
+            context.fillStyle = "orange";
+        else
+            context.fillStyle = "seagreen";
+
+        context.fillRect(x * tailleCase, y * tailleCase, tailleCarre, tailleCarre);
+    }
+
+    setInterval(function () {
+         monde.bougeFourmi();
+         dessineCase();
+    }, 10);
+</script>
+
