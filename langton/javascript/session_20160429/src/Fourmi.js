@@ -1,8 +1,16 @@
 window.nouveauMonde = function () {
+    var position = {x: 10, y: 10};
+
     var positionFourmi = function () {
-        return {x: 10, y: 10};
+        return position;
     };
+
+    var bougeFourmi = function () {
+        return position = {x: 10, y: 9};
+    };
+
     return {
-        positionFourmi: positionFourmi
+        positionFourmi: positionFourmi,
+        bougeFourmi: bougeFourmi
     };
 };
