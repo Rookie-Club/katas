@@ -28,11 +28,21 @@ describe("La Fourmi de Langton", function () {
 
     it("tourne à gauche quand arrive sur case noire", function () {
         var monde = nouveauMonde(20);
-        monde.bougeFourmi(); // position: 9, 10
-        monde.bougeFourmi(); // position: 9, 11
-        monde.bougeFourmi(); // position: 10, 11
-        monde.bougeFourmi(); // position: 10, 10
-        monde.bougeFourmi(); // position: 9, 10
+        monde.bougeFourmi();
+        monde.bougeFourmi();
+        monde.bougeFourmi();
+        monde.bougeFourmi();
+        monde.bougeFourmi();
         expect(monde.directionFourmi()).toEqual({dx: -1, dy: 0});
+    });
+
+    it("inverse la couleur de la case", function () {
+        var monde = nouveauMonde(20);
+        monde.bougeFourmi();
+        monde.bougeFourmi();
+        monde.bougeFourmi();
+        monde.bougeFourmi();
+        monde.bougeFourmi();
+        expect(monde.couleurCase(10, 9)).toEqual("blanc");
     });
 });

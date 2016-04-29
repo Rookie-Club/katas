@@ -35,12 +35,19 @@ window.nouveauMonde = function (dimension) {
     };
 
     var bougeFourmi = function () {
+        var couleur;
         position.x += direction.dx;
         position.y += direction.dy;
 
-        if (couleurCase(position.x, position.y) === "noir") tourneAGauche(); else tourneADroite();
+        if (couleurCase(position.x, position.y) === "noir") {
+            tourneAGauche();
+            couleur = "blanc";
+        } else {
+            tourneADroite();
+            couleur = "noir";
+        }
 
-        grille[position.x][position.y] = "noir";
+        grille[position.x][position.y] = couleur;
     };
 
 
