@@ -22,5 +22,7 @@ describe("La Fourmi de Langton", function () {
         expect(monde.directionFourmi()).toEqual({dx: 0, dy: -1});
         monde.bougeFourmi();
         expect(monde.directionFourmi()).toEqual({dx: 1, dy: 0});
+        monde.bougeFourmi();
+        expect(monde.directionFourmi()).toEqual({dx: 0, dy: 1});
     });
 });
