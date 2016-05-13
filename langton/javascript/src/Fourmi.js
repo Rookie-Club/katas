@@ -1,10 +1,12 @@
+window.creeUnAutreMonde = function (dimension) {
 
-window.autreMonde = function (dimension) {
-    var laDeclarationDePositionFourmi = function () {
-        return {x: dimension / 2, y: dimension / 2};
-    };
+  var milieu = dimension / 2;
 
-    return {
-        positionFourmi: laDeclarationDePositionFourmi
-    };
-};
+  var point_initial = {x: milieu, y: milieu};
+  var au_nord = {x: milieu - 1, y: milieu};
+
+  return {
+    positionFourmi: point_initial,
+    orientationFourmi: au_nord
+  };
+}
