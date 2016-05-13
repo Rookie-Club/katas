@@ -9,27 +9,22 @@ describe("La Fourmi de Langton", function () {
     expect(monde.positionFourmi).toEqual({x: 5, y: 5});
   });
 
-  it("est orienté au nord", function () {
+  it("prochain mouvement en position initiale", function () {
     var monde = creeUnAutreMonde(20);
-    expect(monde.orientationFourmi).toEqual("N");
+    expect(monde.prochainMouvement()).toEqual({x: 0, y: -1});
   });
 
-  it("est orienté au nord d'un petit monde", function () {
-    var monde = creeUnAutreMonde(10);
-    expect(monde.orientationFourmi).toEqual("N");
-  });
-
-  it("tourne a gauche", function () {
+  it("prochain mouvement apres une rotation à gauche", function () {
     var monde = creeUnAutreMonde(20);
     monde.faitTournerLaFourmiAGauche();
-    expect(monde.orientationFourmi).toEqual("O");
+    expect(monde.prochainMouvement()).toEqual({x: -1, y: 0});
   });
 
-  it("tourne a gauche toujours", function () {
+  it("prochain mouvement apres deux rotation à gauche", function () {
     var monde = creeUnAutreMonde(20);
     monde.faitTournerLaFourmiAGauche();
     monde.faitTournerLaFourmiAGauche();
-    expect(monde.orientationFourmi).toEqual("S");
+    expect(monde.prochainMouvement()).toEqual({x: 0, y: 1});
   });
 
   it("avance d'une case", function () {
