@@ -1,9 +1,17 @@
-def lancer(tentatives):
-    score = []
+def calculScore (lancers):
+    score = 0
+    total_tour = 0
 
-    for i in enumerate([tentatives]):
-        return score.append(9)
+    for tour in lancers:
+        total_tour_precedent = total_tour
+        total_tour = 0
 
-    if tentatives == 3:
-        return [9,0,6]
-    return [9]
+        for lancer in tour:
+            if (total_tour_precedent == 10):
+                total_tour += lancer
+                score += lancer * 2
+                total_tour_precedent = lancer
+            else:
+                total_tour += lancer
+                score +=lancer
+    return (score)
