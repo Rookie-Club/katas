@@ -1,11 +1,10 @@
 import unittest
 
 def score(quilles):
-    if len(quilles) == 0:
-        return 0
-    if quilles == [2, 1]:
-        return 3
-    return quilles[0]
+    result = 0
+    for quille in quilles:
+        result += quille
+    return result
 
 class BowlingTest(unittest.TestCase):
 
