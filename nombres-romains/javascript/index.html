@@ -7,12 +7,17 @@
     var romanToNumber = function (roman) {
         return roman;
     }
+    var isARomanNumber = function (roman) {
+      return roman.match(/[IVXLCDM]/).length == roman.length;
+    }
     window.onload = function () {
       console.log("Loaded");
       convertis.onclick = function () {
-        console.log("Click!");
-        console.log("roman.value : ", roman.value);
-        arabe.value = romanToNumber(roman.value);
+        if (isARomanNumber(roman.value)) {
+          arabe.innerHTML = romanToNumber(roman.value);
+        } else {
+          arabe.innerHTML = roman.value + "n'est pas un nombre romain"
+        }
       }
     }
 </script>
@@ -20,5 +25,5 @@
 <h1>convertisseur de nombre romain</h1>
 
 <input type="text" id="roman">
-<input type="text" id="arabe" readonly disabled>
 <button id="convertis">Convertis</button>
+<span id="arabe"></span>
