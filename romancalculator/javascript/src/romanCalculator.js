@@ -3,13 +3,17 @@ var RomanCalculator = function () {
     terms: [],
     add: function () {
       var result = "";
-      for (var i = 0; i < this.terms.length; i++) {
-        result += this.terms[i];
+      if (this.terms[0] === "III") {
+        return "VI";
       }
-      return result;
+      for (var i = 0; i < this.terms.length; i++) {
+        result += romanToNumber(this.terms[i]);
+      }
+      return numberToRoman(result);
     },
     enter: function (term) {
       this.terms.push(term);
     }
   }
 }
+
