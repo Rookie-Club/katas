@@ -11,4 +11,10 @@ describe("RomanCalculator", function () {
   it("return VI when III + III", function () {
     expect(RomanCalculator.plus("III", "III")).toBe("VI");
   });
+  it("return X when VII + III", function () {
+    expect(RomanCalculator.plus("VII", "III")).toBe("X");
+  });
+  it("return IX when VII + II", function () {
+    expect(RomanCalculator.plus("VII", "II")).toBe("IX");
+  });
 });
