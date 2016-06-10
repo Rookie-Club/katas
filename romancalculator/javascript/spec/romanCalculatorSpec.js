@@ -1,8 +1,12 @@
 describe("Roman Calculator", function () {
   it("vide donne 0", function () {
-    expect(romanCalculator(0)).toEqual("");
+    var calculator = RomanCalculator();
+    expect(calculator.add()).toEqual("");
   });
   it("I + I donne II", function () {
-    expect(romanCalculator("I" + "I")).toEqual("II");
+    var calculator = RomanCalculator();
+    calculator.enter("I");
+    calculator.enter("I");
+    expect(calculator.add()).toEqual("II");
   });
 });

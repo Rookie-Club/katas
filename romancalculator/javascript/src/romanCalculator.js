@@ -1,6 +1,7 @@
-var romanCalculator = function (letters) {
-  if (letters == "I" + "I") {
-      return "II"
+var RomanCalculator = function () {
+  return {
+    add: function () {
+      return "";
+    }
   }
-  return ""
 }
