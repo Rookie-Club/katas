@@ -1,10 +1,8 @@
 def convert(letters):
-    dico = {"I":1}
-
-    last_letter = letters[-1]
-    remaining_letters = letters[:-1]
+    dico = {"I": 1, "V": 5}
 
     if len(letters) == 1:
-        return dico[last_letter]
+        return dico[letters[0]]
 
-    return dico[last_letter] + convert(remaining_letters)
+    return convert(letters[:-1]) + convert(letters[-1])
+
