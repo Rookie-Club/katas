@@ -2,30 +2,10 @@
 <meta charset="UTF-8">
 <title> Le Jeu du Demineur</title>
 
-<style>
-  .base {
-    border: 2px black solid;
-    width: 20px;
-    height: 20px;
-  }
-  .boom {
-    background-color: red;
-  }
-</style>
-
-<script>
-  window.onload = function () {
-    console.log("loaded");
-    var tds = document.getElementsByTagName('td');
-    console.log(tds);
-    for(var i in tds) {
-      tds[i].onclick = function () {
-        this.classList.add("boom");
-      }
-    };
-  }
-</script>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <table>
   <tr><td class="base"></td></tr>
 </table>
+
+<script type="text/javascript" src="script.js"></script>

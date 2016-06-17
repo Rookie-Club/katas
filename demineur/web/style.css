@@ -1,0 +1,8 @@
+.base {
+  border: 2px black solid;
+  width: 20px;
+  height: 20px;
+}
+.boom {
+  background-color: red;
+}
