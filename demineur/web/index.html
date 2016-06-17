@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title> Le Jeu du Demineur</title>
+
+<style>
+  td {
+    border: 2px black solid;
+    width: 20px;
+    height: 20px;
+  }
+</style>
+
+<script>
+  window.onload = function () {
+    console.log("loaded");
+    var tds = document.getElementsByTagName('td');
+    console.log(tds);
+    for(var i in tds) {
+      tds[i].onclick = function () {
+        console.log("click");
+      }
+    };
+  }
+</script>
+
+<table>
+  <tr><td></td></tr>
+</table>
