@@ -14,7 +14,7 @@ class NumberToRomanTest(unittest.TestCase):
     def test_6_donne_VI(self):
         self.assertEqual("VI", convert(6))
 
-    def xtest_2_donne_II(self):
+    def test_2_donne_II(self):
         self.assertEqual("II", convert(2))
 
 if __name__ == "__main__":
