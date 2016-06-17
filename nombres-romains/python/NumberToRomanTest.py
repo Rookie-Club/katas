@@ -8,5 +8,8 @@ class NumberToRomanTest(unittest.TestCase):
     def test_1_donne_I(self):
         self.assertEqual("I", convert(1))
 
+    def test_2_donne_II(self):
+        self.assertEqual("II", convert(2))
+
 if __name__ == "__main__":
     unittest.main()
