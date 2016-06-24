@@ -1,8 +1,4 @@
-.base {
-  border: 2px black solid;
-  width: 20px;
-  height: 20px;
-}
-.boom {
-  background-color: red;
-}
+.case {width: 20px; height: 20px; border: 5px outset black}
+.revealedCase { border-style: inset; }
+
+.bomb { background-color: red; }
