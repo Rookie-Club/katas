@@ -6,42 +6,55 @@ var bombOnCase = function (on_case) {
     return on_case.getAttribute('mine');
 };
 
+var clickableCase = function () {
+  return function () {
+    return (!this.classList.contains("revealedCase") && !this.classList.contains("flag"))
+  }
+}
+
 var revealCase = function () {
-    if (this.classList.contains("revealedCase")) { return; }
+  return function () {
+    if (!clickableCase().bind(this)()) { return; }
 
     this.classList.add("revealedCase");
     if(bombOnCase(this)) {
-        this.classList.add("bomb");
+      this.classList.add("bomb");
     }
+  }
 };
 
+var putFlag = function () {
+  return function () {
+    this.classList.toggle("flag");
+  }
+};
+
+
 var random_case = function () {
-    return Math.floor(Math.random() * 64) + 1;
+  return Math.floor(Math.random() * 64) + 1;
 }
 
 var makeCasesWithMineList = function (number_of_mines) {
-    var casesWithMine = [];
-    while (casesWithMine.length < number_of_mines) {
-        var random = random_case();
-        if (!casesWithMine.includes(random)) {
-            casesWithMine.push(random);
-        }
+  var casesWithMine = [];
+  while (casesWithMine.length < number_of_mines) {
+    var random = random_case();
+    if (!casesWithMine.includes(random)) {
+      casesWithMine.push(random);
     }
-    return casesWithMine;
+  }
+  return casesWithMine;
 }
 
-var putFlag = function () {
-    element.oncontextmenu = function (event) {
-        if (this.classList.contains("flag")) {
-            this.classList.add();
-        } else {
-            this.classList.add("flag");
-        }
-    }
-};
+var revealCaseOrPutFlag = function () {
+  if (flag.checked) {
+    putFlag().bind(this)();
+  } else {
+    revealCase().bind(this)();
+  }
+}
 
 window.onload = function () {
-    newgame.onclick = startNewGame;
+  newgame.onclick = startNewGame;
 
   var tds = document.getElementsByTagName("td");
   var number_of_mines = 10;
@@ -54,17 +67,8 @@ window.onload = function () {
       tds[i].setAttribute('mine', true);
       number_of_mines -= 1;
     }
-    tds[i].onclick = revealCase;
+    tds[i].onclick = revealCaseOrPutFlag;
   }
 
 };
 
-var whichClick = function () {
-    event = event || window.event;
-    if (case == 1) {
-        tds[i].onclick = revealCase;
-    } else {
-        tds[i].onclick = putFlag;
-        return false
-    }
-}
