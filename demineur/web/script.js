@@ -43,18 +43,20 @@ var putFlag = function () {
 window.onload = function () {
     newgame.onclick = startNewGame;
 
-    var tds = document.getElementsByTagName("td");
-    var number_of_mines = 10;
-    var cases_with_mine = makeCasesWithMineList(number_of_mines);
+  var tds = document.getElementsByTagName("td");
+  var number_of_mines = 10;
+  var cases_with_mine = makeCasesWithMineList(number_of_mines);
+  total.innerHTML = number_of_mines;
+  founded.innerHTML = 0;
 
-    for (var i = 0; i < tds.length; i++) {
-
-        if (number_of_mines > 0 && cases_with_mine.includes(i)) {
-            tds[i].setAttribute('mine', true);
-            number_of_mines -= 1;
-        }
-            tds[i].onclick = revealCase;
+  for (var i = 0; i < tds.length; i++) {
+    if (number_of_mines > 0 && cases_with_mine.includes(i)) {
+      tds[i].setAttribute('mine', true);
+      number_of_mines -= 1;
     }
+    tds[i].onclick = revealCase;
+  }
+
 };
 
 var whichClick = function () {
