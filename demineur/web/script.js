@@ -1,9 +1,9 @@
 var startNewGame = function () {
-    location.reload();
+  location.reload();
 };
 
 var bombOnCase = function (on_case) {
-    return on_case.getAttribute('mine');
+  return on_case.getAttribute('mine');
 };
 
 var clickableCase = function () {
@@ -11,6 +11,17 @@ var clickableCase = function () {
     return (!this.classList.contains("revealedCase") && !this.classList.contains("flag"))
   }
 }
+
+var canReveal = function (element) {
+  return !(element.hasAttribute("mine"));
+}
+
+var revealAdjCases = function (case_position, element) {
+  if(canReveal(element)) {
+    element.classList.add("revealedCase");
+  }
+};
+
 
 var revealCase = function () {
   return function () {
@@ -29,9 +40,8 @@ var putFlag = function () {
   }
 };
 
-
 var random_case = function () {
-  return Math.floor(Math.random() * 64) + 1;
+  return Math.floor(Math.random() * 64);
 }
 
 var makeCasesWithMineList = function (number_of_mines) {
@@ -70,5 +80,13 @@ window.onload = function () {
     tds[i].onclick = revealCaseOrPutFlag;
   }
 
+  document.addEventListener('keydown', function (event) {
+    const keyName = event.key;
+    if (event.key == 'o') {
+      for (var i = 0; i < tds.length; i++) {
+        revealAdjCases(i, tds[i]);
+      }
+    }
+  })
 };
 

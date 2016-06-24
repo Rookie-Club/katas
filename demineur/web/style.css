@@ -1,4 +1,4 @@
 .case {width: 20px; height: 20px; border: 5px outset black}
-.revealedCase { border-style: inset; }
+.revealedCase { border-style: inset; background-color: lightgrey }
 .flag {background-color: green; }
 .bomb { background-color: red; }
