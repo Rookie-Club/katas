@@ -1,6 +1,10 @@
 import unittest
 
-def numbertoLCD():
+def numbertoLCD(number = None):
+    if (number == 0):
+        return [' -- ', '|  |', '|  |', '    ', '|  |', '|  |', ' -- ']
+    if (number == 1):
+        return ['    ', '   |', '   |', '    ', '   |', '   |', '    ']
     return ['    ', '    ', '    ', '    ', '    ', '    ', '    ']
 
 class NumberToLCDTest(unittest.TestCase):
@@ -9,8 +13,12 @@ class NumberToLCDTest(unittest.TestCase):
         expected = ['    ', '    ', '    ', '    ', '    ', '    ', '    ']
         self.assertEqual(expected, numbertoLCD())
 
-    def test_1_affiche_un(self):
+    def test_affiche_1(self):
         expected = ['    ', '   |', '   |', '    ', '   |', '   |', '    ']
         self.assertEqual(expected, numbertoLCD(1))
+
+    def test_affiche_0(self):
+        expected = [' -- ', '|  |', '|  |', '    ', '|  |', '|  |', ' -- ']
+        self.assertEqual(expected, numbertoLCD(0))
 
 unittest.main()
