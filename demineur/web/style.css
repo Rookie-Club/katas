@@ -1,4 +1,3 @@
-.case {width: 20px; height: 20px; border: 5px outset black}
-.revealedCase { border-style: inset; background-color: lightgrey }
-.flag {background-color: green; }
-.bomb { background-color: red; }
+td {width: 25px; height: 25px; border: 1px solid black;}
+
+.mine {background-color: red;}
