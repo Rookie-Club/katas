@@ -1,15 +1,5 @@
 window.onload = function () {
 
-  var hiddenBomb = function () {
-    var tds = document.getElementsByTagName("td");
-
-    for (var i = 0; i < tds.length; i++) {
-      tds[i].onclick = function () {
-        return this.style.backgroundColor = "red";
-      }
-    }
-  }
-
   var generateGrid = function (gridSize) {
     var table = document.createElement("table");
     document.body.appendChild(table);
@@ -20,9 +10,14 @@ window.onload = function () {
 
       for (var k = 0; k < gridSize; k++) {
         var td = document.createElement("td");
+        td.onclick = revealCase;
         tr.appendChild(td);
       }
     }
+  }
+
+  var revealCase = function () {
+    this.classList.add("mine");
   }
 
   var createBomb = function () {
@@ -39,7 +34,6 @@ window.onload = function () {
   }
 
   generateGrid(8);
-  hiddenBomb();
   createBomb();
   randomBomb();
 }
