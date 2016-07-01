@@ -13,7 +13,7 @@ window.onload = function () {
     var generateGrid = function (numberOfTable, numberOfTd) {
       for (var i = 0; i < numberOfTable; i++) {
         var table = document.createElement("table");
-        document.body.insertBefore(table, document.body.firstChild);
+        document.body.appendChild(table);
 
         for (var j = 0; j < 1; j++) {
           var tr = document.createElement("tr");
