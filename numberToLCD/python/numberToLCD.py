@@ -1,21 +1,27 @@
 def numberToLCD(number = None):
-    number_display = {None :['    ', '    ', '    ', '    ', '    ', '    ', '    '],
+    if number == None:
+        return "\n".join(['    ', '    ', '    ', '    ', '    ', '    ', '    '])
+
+    number_display = {
             0: [' -- ', '|  |', '|  |', '    ', '|  |', '|  |', ' -- '],
             1: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
             2: [' -- ', '   |', '   |', ' -- ', '|   ', '|   ', ' -- ']
             }
+    SPACE = ' '
     DISPLAYABLE_LINES = len(number_display[0])
-
-    space = [' ', ' ', ' ', ' ', ' ', ' ', ' ']
+    DECADE = 10
 
     lcd_array = []
-    if (numberMoreThanOneDigit(number)):
+    if (number >= DECADE):
         for line in range(DISPLAYABLE_LINES):
-            lcd_array.append(number_display[1][line] + space[line] + number_display[0][line])
+            lcd_array.append(number_display[number // DECADE][line] + SPACE + number_display[number % DECADE][line])
     else:
-        lcd_array = number_display[number]
+        for line in range(DISPLAYABLE_LINES):
+            lcd_array.append(number_display[number % DECADE][line])
 
-    return "\n".join(lcd_array)
+    return formatToLCD(lcd_array)
 
-def numberMoreThanOneDigit(number):
-    return number > 9
+
+def formatToLCD(array):
+    return "\n".join(array)
+
