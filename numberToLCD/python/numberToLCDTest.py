@@ -43,4 +43,5 @@ class NumberToLCDTest(unittest.TestCase):
                     '      -- ']
         self.assertEqual("\n".join(expected), numberToLCD(10))
 
+
 unittest.main()

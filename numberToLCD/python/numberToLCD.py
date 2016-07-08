@@ -1,28 +1,21 @@
 def numberToLCD(number = None):
-    dico = {None :['    ', '    ', '    ', '    ', '    ', '    ', '    '],
+    number_display = {None :['    ', '    ', '    ', '    ', '    ', '    ', '    '],
             0: [' -- ', '|  |', '|  |', '    ', '|  |', '|  |', ' -- '],
             1: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            2: [' -- ', '   |', '   |', ' -- ', '|   ', '|   ', ' -- '],
-            3: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            4: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            5: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            6: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            7: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            8: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            9: ['    ', '   |', '   |', '    ', '   |', '   |', '    '],
-            10: [' -- ', '|  |', '|  |', '    ', '|  |', '|  |', ' -- ']}
+            2: [' -- ', '   |', '   |', ' -- ', '|   ', '|   ', ' -- ']
+            }
+    DISPLAYABLE_LINES = len(number_display[0])
 
     space = [' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
     lcd_array = []
-    exclude = set({None :['    ', '    ', '    ', '    ', '    ', '    ', '    ']})
-
-    if (number > 9):
-      for i in set(dico.keys()).difference(set(exclude)):
-        i_modulo = i % number
-        for j in range(7):
-          lcd_array.append(dico[i_modulo + 1][j] + space[j] + dico[i][j])
+    if (numberMoreThanOneDigit(number)):
+        for line in range(DISPLAYABLE_LINES):
+            lcd_array.append(number_display[1][line] + space[line] + number_display[0][line])
     else:
-      lcd_array = dico[number]
+        lcd_array = number_display[number]
 
     return "\n".join(lcd_array)
+
+def numberMoreThanOneDigit(number):
+    return number > 9
