@@ -8,6 +8,7 @@ def bot(text, asked_word_quantity):
         new_text += words[0]
     if (asked_word_quantity >= 2):
         new_text += ' ' + words[1]
+
     return new_text
 
 class BotTest(unittest.TestCase):
