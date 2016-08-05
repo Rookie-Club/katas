@@ -1,9 +1,7 @@
-var fourmi = {
-  avance: function () {
-    console.log("coucou j'avance");
-  }
-};
-var dessineTerrain = function (contexte, fourmi){
-  contexte.fillStyle = "purple";
-  contexte.fillRect(0 + (terrain.width / 2), 0 + (terrain.height / 2), 20, 20);
+var Fourmi = function () {
+  this.position = {x: 10, y: 10};
+}
+
+Fourmi.prototype.avance = function () {
+  console.log("coucou j'avance");
 }
