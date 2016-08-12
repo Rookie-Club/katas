@@ -1,4 +1,7 @@
 def score(quilles):
-    if not quilles:
-        return 0
-    return quilles[0]
+    score = 0
+
+    for quille in quilles:
+        score += quille
+
+    return score
