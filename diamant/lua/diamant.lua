@@ -1,23 +1,28 @@
 function diamant(lettre)
 
-  local espace = " "
-
-  local alphabet = {"A", "B", "C"}
+  local tableau = {}
 
   if lettre == "" then
-    return ""
+    table.insert(tableau, "")
   end
 
   if lettre == "A" then
-    return alphabet[1]
+    table.insert(tableau, "A")
   end
 
   if lettre == "B" then
-    return " A".."\n".."B B".."\n".." A"
+    table.insert(tableau, " " .. "A")
+    table.insert(tableau, "B B")
+    table.insert(tableau, " A")
   end
 
   if lettre == "C" then
-    return "  A".."\n".." B B".."\n".."C   C".."\n".." B B".."\n".."  A"
+    table.insert(tableau, "  A")
+    table.insert(tableau, " B B")
+    table.insert(tableau, "C   C")
+    table.insert(tableau, " B B")
+    table.insert(tableau, "  A")
   end
 
+  return table.concat(tableau, "\n")
 end
