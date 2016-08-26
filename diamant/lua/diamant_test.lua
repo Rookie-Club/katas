@@ -11,8 +11,18 @@ describe("construire un diamant avec", function()
     assert.is_equal("A", diamant("A"))
   end)
 
-  it("B donne AB B A", function()
-    assert.is_equal(" AB B A", diamant("B"))
+  it("B donne  A \
+              B B\
+               A", function()
+    assert.is_equal(" A\nB B\n A", diamant("B"))
+  end)
+
+  it("C donne  A\
+              B B\
+             C   C\
+              B B\
+               A", function()
+    assert.is_equal("  A\n B B\nC   C\n B B\n  A", diamant("C"))
   end)
 
 end)
