@@ -3,8 +3,10 @@ class JeuDeNim():
         self.batons = batons
 
     def retirer(self, batons_a_retirer):
-        if (self.batons == 1):
-            return self.batons
-        else:
+        self.compteur_tour = 0
+        if (self.batons != 1):
             self.batons -= batons_a_retirer
-            return self.batons
+        self.compteur_tour += 1
+
+    def joueur(self, ordre):
+        ordre = (self.compteur_tour % 2) + 1

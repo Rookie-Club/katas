@@ -18,4 +18,12 @@ class NimTest(unittest.TestCase):
         partie_a_10_batons.retirer(1)
         self.assertEqual(1, partie_a_10_batons.batons)
 
+    def test_tour_du_joueur(self):
+        partie_a_10_batons = JeuDeNim(10)
+        partie_a_10_batons.joueur(1)
+        partie_a_10_batons.retirer(1)
+        partie_a_10_batons.joueur(2)
+        partie_a_10_batons.retirer(1)
+        self.assertEqual(8, partie_a_10_batons.batons)
+
 unittest.main()
