@@ -1,12 +1,15 @@
 class JeuDeNim():
     def __init__(self, batons):
         self.batons = batons
+        self.joueur = 1
+
+    def changer_joueur(self):
+        if (self.tour == 4):
+            self.joueur = 2
 
     def retirer(self, batons_a_retirer):
-        self.compteur_tour = 0
+        self.tour = 0
         if (self.batons != 1):
             self.batons -= batons_a_retirer
-        self.compteur_tour += 1
-
-    def joueur(self, ordre):
-        ordre = (self.compteur_tour % 2) + 1
+            self.tour += 1
+            self.changer_joueur()
