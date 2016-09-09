@@ -3,4 +3,8 @@ class JeuDeNim():
         self.batons = batons
 
     def retirer(self, batons_a_retirer):
-        self.batons -= batons_a_retirer
+        if (self.batons == 1):
+            return self.batons
+        else:
+            self.batons -= batons_a_retirer
+            return self.batons

@@ -13,4 +13,9 @@ class NimTest(unittest.TestCase):
         partie_a_10_batons.retirer(1)
         self.assertEqual(9, partie_a_10_batons.batons)
 
+    def test_perdue(self):
+        partie_a_10_batons = JeuDeNim(1)
+        partie_a_10_batons.retirer(1)
+        self.assertEqual(1, partie_a_10_batons.batons)
+
 unittest.main()
