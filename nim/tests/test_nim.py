@@ -23,6 +23,10 @@ class NimTest(unittest.TestCase):
         partie_10_batons.retirer(1)
         self.assertEqual(2, partie_10_batons.joueur)
 
+    def _test_batons_a_retirer_max_3_batons(self):
+        partie_10_batons = Partie(10)
+        partie_10_batons.retirer(4)
+
     def test_apres_tour_2_joueur_1(self):
         partie_10_batons = Partie(10)
         partie_10_batons.retirer(1)
