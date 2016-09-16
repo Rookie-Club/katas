@@ -1,11 +1,15 @@
 import unittest
+from nim import *
 
 class NimTest(unittest.TestCase):
 
-    def test_true_false(self):
-        self.assertEqual(True, True)
-
     def test_partie_initiale_a_10_batons(self):
-        self.assertEqual(10, jeu.batons(10))
+        partie_10_batons = Partie(10)
+        self.assertEqual(10, partie_10_batons.batons)
+
+    def test_retirer_1_baton(self):
+        partie_10_batons = Partie(10)
+        partie_10_batons.retirer(1)
+        self.assertEqual(9, partie_10_batons.batons)
 
 unittest.main()
