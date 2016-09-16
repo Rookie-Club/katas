@@ -5,3 +5,6 @@ class Partie():
     def retirer(self, batons_a_retirer):
         if (batons_a_retirer < self.batons):
             self.batons -= batons_a_retirer
+
+    def joueur(self, numero_joueur):
+        (numero_joueur % 2) + 1
