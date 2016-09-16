@@ -14,8 +14,8 @@ class NimTest(unittest.TestCase):
         self.assertEqual(9, partie_10_batons.batons)
 
     def test_reste_1_batons_egal_fin_de_partie(self):
-        partie_10_batons = Partie(10)
-        partie_10_batons.retirer(9)
+        partie_10_batons = Partie(2)
+        partie_10_batons.retirer(1)
         self.assertEqual(True, partie_10_batons.fin_de_partie())
 
     def test_apres_tour_1_joueur_2(self):
@@ -23,9 +23,10 @@ class NimTest(unittest.TestCase):
         partie_10_batons.retirer(1)
         self.assertEqual(2, partie_10_batons.joueur)
 
-    def _test_batons_a_retirer_max_3_batons(self):
+    def test_batons_a_retirer_max_3_batons(self):
         partie_10_batons = Partie(10)
         partie_10_batons.retirer(4)
+        self.assertEqual(False, partie_10_batons.max_batons())
 
     def test_apres_tour_2_joueur_1(self):
         partie_10_batons = Partie(10)

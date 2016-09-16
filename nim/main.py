@@ -8,7 +8,7 @@ jeu = Partie(10)
 
 print "Partie à 10 batons."
 
-while (jeu.fin_de_partie() == False):
+while (not jeu.fin_de_partie()):
 
     print "joueur " + str(jeu.joueur)
     batons_a_retirer = raw_input("Retirer combien de batons ? ")
