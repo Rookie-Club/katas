@@ -3,4 +3,5 @@ class Partie():
         self.batons = batons
 
     def retirer(self, batons_a_retirer):
-        self.batons -= batons_a_retirer
+        if (baton_a_retirer < batons):
+            self.batons -= batons_a_retirer

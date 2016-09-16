@@ -12,4 +12,9 @@ class NimTest(unittest.TestCase):
         partie_10_batons.retirer(1)
         self.assertEqual(9, partie_10_batons.batons)
 
+    def test_fin_de_partie(self):
+        partie_10_batons = Partie(3)
+        partie_10_batons.retirer(3)
+        self.assertEqual(3, partie_10_batons.batons)
+
 unittest.main()
