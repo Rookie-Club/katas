@@ -29,4 +29,6 @@ class NimTest(unittest.TestCase):
         partie_10_batons.retirer(1)
         self.assertEqual(1, partie_10_batons.joueur)
 
-unittest.main()
+
+if __name__ == "__main__":
+    unittest.main()
