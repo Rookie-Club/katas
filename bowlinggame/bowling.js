@@ -1,4 +1,14 @@
-var partieBowling = { quillesDepart: 10, quillesTombees: 1};
+var BowlingGame = function () {
+  this._score = 0;
 
-module.exports = partieBowling;
+  this.faitTomberQuilles = function (quilles) {
+    this._score += quilles
+  }
+
+  this.score = function () {
+    return this._score;
+  }
+}
+
+module.exports = BowlingGame;
 
