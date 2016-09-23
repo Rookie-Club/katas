@@ -2,3 +2,4 @@
 *.pyc
 */.gradle/
 .DS_Store
+bowlinggame/node_modules/
