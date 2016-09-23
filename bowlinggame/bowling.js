@@ -1,5 +1,4 @@
-var partieBowling = { quillesDepart: 10};
+var partieBowling = { quillesDepart: 10, quillesTombees: 1};
 
 module.exports = partieBowling;
-module.exports.partieBowling = partieBowling;
 
