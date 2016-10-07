@@ -1,3 +1,6 @@
-let jeuBowling = {score: 0,
-  lancee: function(quille){ return quille; }
+var jeuBowling = {
+  score: 0,
+  quilles_tombees: function (quilles) {
+    this.score += quilles;
+  },
 };
