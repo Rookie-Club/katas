@@ -1,6 +1,7 @@
 describe("Nim", function() {
-  it("works", function() {
-    expect(true).toEqual(false);
+  it("contient 10 bâtons", function() {
+    var partie = new Nim(10);
+    expect(10).toEqual(partie.batons_restants);
   });
 });
 
