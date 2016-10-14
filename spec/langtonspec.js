@@ -1,6 +1,7 @@
 describe("langton", function () {
-  it("true false", function () {
-    expect(true).toBe(true);
+  it("position initiale de la fourmi", function () {
+    var fourmi = new Fourmi();
+    expect(fourmi.position).toBe({x: 0, y: 0});
   });
 });
 
