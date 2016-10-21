@@ -9,6 +9,11 @@ window.onload = function () {
 
   var fourmi = new Ant();
   dessine_fourmi(fourmi, context);
+
+  btn_avancer.onclick = function () {
+    fourmi.forward(taille_fourmi);
+    dessine_fourmi(fourmi, context);
+  }
 };
 
 const dessine_fourmi = function (fourmi, context) {
@@ -19,7 +24,7 @@ const dessine_fourmi = function (fourmi, context) {
 
 const decalage_position = function (fourmi) {
   return {
-    x: fourmi.position.x - (taille_fourmi / 2) + world_width / 2,
-    y: fourmi.position.y - (taille_fourmi / 2) + world_height / 2
+    x: fourmi.position.x - (taille_fourmi / 2) + (world_width / 2),
+    y: fourmi.position.y - (taille_fourmi / 2) + (world_height / 2)
   };
 }
