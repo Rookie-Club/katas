@@ -1,35 +1,18 @@
-describe("langton", function () {
-  it("position X initiale de la fourmi toBe 0", function () {
-    var fourmi = new Fourmi();
-    expect(fourmi.position.x).toBe(0);
+describe("La fourmi de Langton", function () {
+  it("position initiale de la fourmi", function () {
+    var ant = new Ant();
+    expect(ant.position).toEqual({x: 0, y: 0});
   });
 
-  it("position X initiale de la fourmi toEqual 0", function () {
-    var fourmi = new Fourmi();
-    expect(fourmi.position.x).toEqual(0);
+  it("avance vers le nord d'une case", function () {
+    var ant = new Ant();
+    ant.forward(1);
+    expect(ant.position).toEqual({x: 0, y: -1});
   });
 
-  it("position initiale de la fourmi toBe 0,0", function () {
-    var fourmi = new Fourmi();
-    expect(fourmi.position).toBe({x: 0, y: 0});
+  it("colore une case en noir si blanche", function () {
+    var ant = new Ant();
+    ant.forward(1);
+    expect(ant.color).toEqual("black");
   });
-
-  it("position initiale de la fourmi toEqual 0,0", function () {
-    var fourmi = new Fourmi();
-    expect(fourmi.position).toEqual({x: 0, y: 0});
-  });
-
-
-  it("la fourmi toBe une autre fourmi", function () {
-    var fourmi = new Fourmi();
-    expect(fourmi).toBe(new Fourmi());
-  });
-
-  it("la fourmi toEqual une autre fourmi", function () {
-    var fourmi = new Fourmi();
-    expect(fourmi).toEqual(new Fourmi());
-  });
-
-
 });
-
