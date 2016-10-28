@@ -12,11 +12,19 @@ describe( "Le bowling fonctionnel", function () {
   });
 
   it("spare en deuxieme manche", function () {
-    expect(calcul_score([3, 2, 6, 4, 2])).toEqual((3 + 2) + (6 + 4 + 2) + 2);
+    expect(calcul_score([3, 2, 6, 4, 2, 1])).toEqual((3 + 2) + (6 + 4 + 2) + (2 + 1));
   });
 
   it("faux spare a cheval", function () {
     expect(calcul_score([3, 2, 8, 1, 2])).toEqual((3 + 2) + (8 + 1) + 2);
+  });
+
+  it("counter strike", function () {
+    expect(calcul_score([10, 8, 1])).toEqual((10 + 8 + 1) + (8 + 1));
+  });
+
+  it("faux strike à cheval mais vrai spare", function () {
+    expect(calcul_score([0, 10, 8, 1])).toEqual((0 + 10 + 8) + (8 + 1));
   });
 });
 
