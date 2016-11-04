@@ -1,6 +1,7 @@
-# Rookie Club
+# Nim Game
 
-Ce dépot va servir à heberger le journal du Rookie club. Le journal est saisi au fur et à mesure dans le
-[wiki](https://github.com/ut7/rookie-club/wiki).
+L'article sur wikipedia évoque [Les jeux de nim](https://fr.wikipedia.org/wiki/Jeux_de_Nim).
 
-Pour en savoir plus sur cette formation, vous pouvez lire la [présentation du rookie club](https://github.com/ut7/rookie-club/blob/master/documents/rookie_club.md)
+La version la plus courement utilisé est la triviale amélioré (un, deux ou
+trois allumettes à enlever). Mais peut-être que certaines variantes peuvent
+être intéressante ?
