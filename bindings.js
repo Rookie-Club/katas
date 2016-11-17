@@ -1,30 +1,24 @@
-const taille_fourmi = 20;
-var world_width, world_height;
+const sizeAnt = 20;
+var worldWidth, worldHeight;
 
 window.onload = function () {
   var canvas = document.getElementById("canvas");
   var context = canvas.getContext("2d");
-  world_width = canvas.width;
-  world_height = canvas.height;
-
-  var fourmi = new Ant();
-  dessine_fourmi(fourmi, context);
-
-  btn_avancer.onclick = function () {
-    fourmi.forward(taille_fourmi);
-    dessine_fourmi(fourmi, context);
-  }
-};
-
-const dessine_fourmi = function (fourmi, context) {
-  context.fillStyle = "black";
-  position = decalage_position(fourmi);
-  context.fillRect(position.x, position.y, taille_fourmi, taille_fourmi);
+  worldWidth = canvas.width;
+  worldHeight = canvas.height;
+  var ant = new Ant();
+  drawAnt(ant, context);
 }
 
-const decalage_position = function (fourmi) {
+const drawAnt = function (ant, context) {
+  var position = positionAnt(ant);
+  context.fillStyle = "black";
+  context.fillRect(position.x, position.y, sizeAnt, sizeAnt);
+}
+
+const positionAnt = function (ant) {
   return {
-    x: fourmi.position.x - (taille_fourmi / 2) + (world_width / 2),
-    y: fourmi.position.y - (taille_fourmi / 2) + (world_height / 2)
-  };
+    x: ant.position.x + (worldWidth/2) - (sizeAnt/2),
+    y: ant.position.y + (worldHeight/2) - (sizeAnt/2)
+  }
 }
