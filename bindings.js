@@ -8,6 +8,11 @@ window.onload = function () {
   worldHeight = canvas.height;
   var ant = new Ant();
   drawAnt(ant, context);
+
+  forward.onclick = function () {
+    ant.forward(sizeAnt);
+    drawAnt(ant, context);
+  };
 }
 
 const drawAnt = function (ant, context) {
