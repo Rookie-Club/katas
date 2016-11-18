@@ -6,13 +6,16 @@ const Ant = function () {
 
   this.move = function () {
     if (this.position.x == 1) {
-      this.position.y += 1;
+      this.position.x += this.direction.x;
+      this.position.y += this.direction.y;
       this.direction = {x: -1, y: 0};
     } else if (this.position.y == -1) {
-      this.position.x += 1;
+      this.position.x += this.direction.x;
+      this.position.y += this.direction.y;
       this.direction = {x: 0, y: 1};
     } else {
-      this.position.y -= 1;
+      this.position.x += this.direction.x;
+      this.position.y += this.direction.y;
       this.direction = {x: 1, y: 0};
     }
   }
