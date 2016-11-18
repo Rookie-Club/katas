@@ -2,7 +2,7 @@ describe("Langton Ant", function () {
   it("initial position", function () {
     var ant = new Ant();
     expect(ant.position).toEqual({x: 0, y: 0});
-    expect(ant.direction).toEqual("North");
+    expect(ant.orientation()).toEqual("North");
     expect(ant.colorCase).toEqual("white");
   });
 
@@ -10,7 +10,7 @@ describe("Langton Ant", function () {
     var ant = new Ant();
     ant.move();
     expect(ant.position).toEqual({x: 0, y: -1});
-    expect(ant.direction).toEqual("East");
+    expect(ant.orientation()).toEqual("East");
     expect(ant.colorCase).toEqual("white");
   });
 
@@ -19,7 +19,7 @@ describe("Langton Ant", function () {
     ant.move();
     ant.move();
     expect(ant.position).toEqual({x: 1, y: -1});
-    expect(ant.direction).toEqual("South");
+    expect(ant.orientation()).toEqual("South");
     expect(ant.colorCase).toEqual("white");
   });
 
@@ -29,7 +29,7 @@ describe("Langton Ant", function () {
     ant.move();
     ant.move();
     expect(ant.position).toEqual({x: 1, y: 0});
-    expect(ant.direction).toEqual("West");
+    expect(ant.orientation()).toEqual("West");
     expect(ant.colorCase).toEqual("white");
   });
 });
