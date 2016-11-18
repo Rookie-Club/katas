@@ -22,4 +22,14 @@ describe("Langton Ant", function () {
     expect(ant.direction).toEqual("South");
     expect(ant.colorCase).toEqual("white");
   });
+
+  it("after three move", function () {
+    var ant = new Ant();
+    ant.move();
+    ant.move();
+    ant.move();
+    expect(ant.position).toEqual({x: 1, y: 0});
+    expect(ant.direction).toEqual("West");
+    expect(ant.colorCase).toEqual("white");
+  });
 });
