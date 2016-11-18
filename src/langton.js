@@ -1,6 +1,14 @@
 const Ant = function () {
   this.position = {x: 0, y: 0};
-  this.forward = function (caseInWorld) {
-    this.position.y -= caseInWorld;
+  this.direction = "North";
+  this.colorCase = "white";
+  this.move = function () {
+    if (this.position.y == -1) {
+      this.position.x += 1;
+      this.direction = "South";
+    } else {
+      this.position.y -= 1;
+      this.direction = "East";
+    }
   }
 }

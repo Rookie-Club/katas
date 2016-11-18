@@ -9,8 +9,8 @@ window.onload = function () {
   var ant = new Ant();
   drawAnt(ant, context);
 
-  forward.onclick = function () {
-    ant.forward(sizeAnt);
+  move.onclick = function () {
+    ant.move();
     drawAnt(ant, context);
   };
 }
@@ -23,7 +23,7 @@ const drawAnt = function (ant, context) {
 
 const positionAnt = function (ant) {
   return {
-    x: ant.position.x + (worldWidth/2) - (sizeAnt/2),
-    y: ant.position.y + (worldHeight/2) - (sizeAnt/2)
+    x: (ant.position.x * sizeAnt) + (worldWidth/2) - (sizeAnt/2),
+    y: (ant.position.y * sizeAnt) + (worldHeight/2) - (sizeAnt/2)
   }
 }
