@@ -98,8 +98,8 @@ La formation peut durer de 12 à 24 mois, à raison d'une soixantaine de jours p
 an. La facturation peut être mensuelle ou trimestrielle. Nous ferons parvenir
 une facture des jours de formation, accompagnée des feuilles d'émargement. 
 
-Le montant est de **140 € HT / jour de formation**, pour 7 heures de formation
-par jour, soit 20 € HT / heure.
+Le montant est de **160 € HT / jour de formation**, pour 7 heures de formation
+par jour, soit ~23 € HT / heure.
 
 Nous travaillons actuellement pour faire reconnaitre notre formation et la
 rendre qualifiante. Nous pensons en effet que les apprenants pourraient en fin
@@ -150,5 +150,5 @@ sur la formation n'hésitez pas à nous contacter
 
 La formation se déroule dans les locaux de la coopérative **/ut7**, une société
 de conseil en informatique et un **organisme agréé de formation** (numéro 11 75
-44738 75). La «boutique» se situe au **82 passage du Caire, dans le 2e
+44738 75). La «boutique» se situe **14 avenue Ledru-Rollin, dans le 12e
 arrondissement de Paris**.
