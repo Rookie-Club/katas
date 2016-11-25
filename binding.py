@@ -17,13 +17,14 @@ def dessine_cases_blanches(positions):
         pygame.draw.rect(fenetre, white, rect)
 
 position_fourmi = [2, 3]
+orientation_fourmi = [0, -1]
 positions_cases_blanches = []
 
 while True:
     pygame.time.wait(3000)
 
-    position_fourmi, positions_cases_blanches = parcours_fourmi(position_fourmi, positions_cases_blanches)
-    print "Après ce tour, la fourmi est en " + str(position_fourmi) + " et les cases blanches doivent être " + str(positions_cases_blanches)
+    position_fourmi, orientation_fourmi, positions_cases_blanches = parcours_fourmi(position_fourmi, orientation_fourmi, positions_cases_blanches)
+    print "Après ce tour, la fourmi est en " + str(position_fourmi) + ", sont orientation est " + str(orientation_fourmi) + " et les cases blanches doivent être " + str(positions_cases_blanches)
 
     dessine_cases_blanches(positions_cases_blanches)
     pygame.display.update()
