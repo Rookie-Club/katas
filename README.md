@@ -1,5 +1,3 @@
-# Rookie Club
-
 _Une formation, un accompagnement, pensé et organisé par [/ut7](http://ut7.fr)_
 
 Ce dépot héberge les sujets, le code source, le wiki et le journal du Rookie
