@@ -1,18 +1,33 @@
+# -*- coding: utf-8 -*-
+
 import pygame
 from pygame import *
+import sys
+from langton import *
+
+white = (255, 255, 255)
 
 pygame.init()
 fenetre = pygame.display.set_mode((640, 480), RESIZABLE)
 
-continuer = int(input())
+def dessine_cases_blanches(positions):
+    for position in positions:
+        rect = (position[0] * 30, position[1] * 30, 30, 30)
+        rect_surface = fenetre.subsurface(rect)
+        pygame.draw.rect(fenetre, white, rect)
 
-pygame.display.flip()
+position_fourmi = [2, 3]
+positions_cases_blanches = []
 
-rect = pygame.Rect(10, 20, 30, 30)
+while True:
+    pygame.time.wait(3000)
 
+    position_fourmi, positions_cases_blanches = parcours_fourmi(position_fourmi, positions_cases_blanches)
+    print "Après ce tour, la fourmi est en " + str(position_fourmi) + " et les cases blanches doivent être " + str(positions_cases_blanches)
 
+    dessine_cases_blanches(positions_cases_blanches)
+    pygame.display.update()
 
-while continuer:
     for event in pygame.event.get():
         if event.type == QUIT:
-            continuer = 0
+            sys.exit()
