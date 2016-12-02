@@ -7,15 +7,12 @@ window.onload = function () {
   worldWidth = canvas.width;
   worldHeight = canvas.height;
   var positionFourmi = [0, 0];
+  var orientation = [0, -1]
 
   move.onclick = function () {
     drawAnt(positionFourmi, context);
-    positionFourmi = nouvellePositionFourmi(positionFourmi);
+    positionFourmi = nouvellePositionFourmi(positionFourmi, orientation);
   };
-}
-
-const nouvellePositionFourmi = function (positionFourmi) {
-    return [0, -1];
 }
 
 const drawAnt = function (positionFourmi, context) {
