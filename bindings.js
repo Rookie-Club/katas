@@ -7,11 +7,13 @@ window.onload = function () {
   worldWidth = canvas.width;
   worldHeight = canvas.height;
   var positionFourmi = [0, 0];
-  var orientation = [0, -1]
+  var casesNoires = [];
+  var orientationFourmi = [0, -1];
 
   move.onclick = function () {
     drawAnt(positionFourmi, context);
-    positionFourmi = nouvellePositionFourmi(positionFourmi, orientation);
+    positionFourmi = nouvellePositionFourmi(positionFourmi, orientationFourmi);
+    orientationFourmi = nouvelleOrientationFourmi(positionFourmi, orientationFourmi, casesNoires);
   };
 }
 
