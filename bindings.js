@@ -6,16 +6,16 @@ window.onload = function () {
   var context = canvas.getContext("2d");
   worldWidth = canvas.width;
   worldHeight = canvas.height;
-  drawAnt(context);
+  drawAnt(0, 0, context);
 
   move.onclick = function () {
-    drawAnt(context);
+    drawAnt(0, -1, context);
   };
 }
 
-const drawAnt = function (context) {
+const drawAnt = function (antX, antY, context) {
   context.fillStyle = "black";
-  context.fillRect(positionAntX(positionX(0)), positionAntY(positionY(0)), sizeAnt, sizeAnt);
+  context.fillRect(positionAntX(antX), positionAntY(antY), sizeAnt, sizeAnt);
 }
 
 const positionAntX = function (oldPositionX) {
