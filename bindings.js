@@ -6,16 +6,21 @@ window.onload = function () {
   var context = canvas.getContext("2d");
   worldWidth = canvas.width;
   worldHeight = canvas.height;
-  drawAnt(0, 0, context);
+  var positionFourmi = [0, 0];
 
   move.onclick = function () {
-    drawAnt(0, -1, context);
+    drawAnt(positionFourmi, context);
+    positionFourmi = nouvellePositionFourmi(positionFourmi);
   };
 }
 
-const drawAnt = function (antX, antY, context) {
+const nouvellePositionFourmi = function (positionFourmi) {
+    return [0, -1];
+}
+
+const drawAnt = function (positionFourmi, context) {
   context.fillStyle = "black";
-  context.fillRect(positionAntX(antX), positionAntY(antY), sizeAnt, sizeAnt);
+  context.fillRect(positionAntX(positionFourmi[0]), positionAntY(positionFourmi[1]), sizeAnt, sizeAnt);
 }
 
 const positionAntX = function (oldPositionX) {
