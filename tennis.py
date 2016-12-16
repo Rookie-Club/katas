@@ -1,14 +1,15 @@
-def point(index):
+def show_points(players_score):
     score_range = [0, 15, 30, 40]
-    return score_range[index]
+    return [score_range[players_score['j1']],
+            score_range[players_score['j2']]]
 
-def score(winners):
-    score = [0, 0]
+def score_calculus(winners):
+    score = {'j1': 0, 'j2': 0}
 
     for winner in winners:
-        if winner == "j1":
-            score[0] += 1
-        else:
-            score[1] += 1
+        score[winner] += 1
 
-    return [point(score[0]), point(score[1])]
+    return score
+
+def score(winners):
+   return show_points(score_calculus(winners))
