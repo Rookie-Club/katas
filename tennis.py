@@ -3,7 +3,12 @@ def point(index):
     return score_range[index]
 
 def score(winners):
-    score = [point(len(winners)), 0]
-    if winners == ["j2"]:
-        score.reverse()
-    return score
+    score = [0, 0]
+
+    for winner in winners:
+        if winner == "j1":
+            score[0] += 1
+        else:
+            score[1] += 1
+
+    return [point(score[0]), point(score[1])]

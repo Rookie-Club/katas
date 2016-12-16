@@ -15,4 +15,7 @@ class TennisTest(unittest.TestCase):
     def test_player_2_scores_first_point(self):
         self.assertEqual([0, 15], score(['j2']))
 
+    def test_players_tie_at_15(self):
+        self.assertEqual([15, 15], score(['j2', 'j1']))
+
 unittest.main()
