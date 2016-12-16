@@ -5,9 +5,10 @@ def point(index):
     return score_range[index]
 
 def score(winners):
+    score = [point(len(winners)), 0]
     if winners == ["j2"]:
-        return [0, point(len(winners))]
-    return [point(len(winners)), 0]
+        score.reverse()
+    return score
 
 class TennisTest(unittest.TestCase):
     def test_joueur_1_marque_premier_point(self):
