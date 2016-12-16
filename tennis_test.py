@@ -1,8 +1,10 @@
 import unittest
 
+def score(points):
+    return [15, 0]
 
 class TennisTest(unittest.TestCase):
-    def test_tennis_premier_point_vaut_5(self):
-        self.assertEqual([5], score(5))
+    def test_joueur_1_marque_premier_point(self):
+        self.assertEqual([15, 0], score(['j1']))
 
 unittest.main()
