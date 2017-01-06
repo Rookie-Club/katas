@@ -1,15 +1,15 @@
-def show_points(players_score):
-    score_range = [0, 15, 30, 40]
-    return [score_range[players_score['j1']],
-            score_range[players_score['j2']]]
+def show_game_points(players_score):
+    game_scores = [0, 15, 30, 40]
+    return [game_scores[players_score['j1']],
+            game_scores[players_score['j2']]]
 
-def score_calculus(winners):
-    score = {'j1': 0, 'j2': 0}
+def game_score_calculus(winners):
+    game_score = {'j1': 0, 'j2': 0}
 
     for winner in winners:
-        score[winner] += 1
+        game_score[winner] += 1
 
-    return score
+    return game_score
 
-def score(winners):
-   return show_points(score_calculus(winners))
+def game_score(winners):
+   return show_game_points(game_score_calculus(winners))
