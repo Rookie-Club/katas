@@ -21,6 +21,9 @@ class TennisTest(unittest.TestCase):
     def test_player_1_wins_2_times_player_2_wins_1_time(self):
         self.assertEqual([30, 15], game_score(['j2', 'j1', 'j1']))
 
+    def test_api_score(self):
+        self.assertEqual({'points': [30, 15], 'games': [0, 0], 'sets': [0, 0]}, score(['j1', 'j2', 'j1']))
+
     def test_player_1_wins_4_times(self):
         winners = ['j2', 'j2', 'j2', 'j2']
         self.assertEqual([0, 0], game_score(winners))

@@ -1,3 +1,9 @@
+def score(winners):
+    score = {'points': [0, 0], 'games': [0, 0], 'sets': [0, 0]}
+    score['points'] = show_game_points(game_score_calculus(winners))
+    return score
+
+
 def show_game_points(players_score):
     game_scores = [0, 15, 30, 40]
     return [game_scores[players_score['j1']],
