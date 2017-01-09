@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<title> Jeu de la vie </title>
+<link rel="stylesheet" href="style.css">
+
+<h1>C'est le jeu de la vie</h1>
+
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<button id="onoff">start simulation</button>
+<script>
+window.onload = function () {
+  console.log("chargement termine");
+  onoff.onclick = function () {
+    if (onoff.getAttribute("state")) {
+      console.log("fin de la simulation");
+      onoff.removeAttribute("state");
+      onoff.innerHTML = "start simulation";
+    } else {
+      console.log("demarrage de la simulation");
+      onoff.setAttribute("state", "started");
+      onoff.innerHTML = "arret simulation";
+    }
+  }
+}
+</script>
