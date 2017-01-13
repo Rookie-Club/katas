@@ -6,13 +6,13 @@ class PartieTennis():
         self._points = [0, 0]
 
     def points(self):
-        return self._points
+        points_possibles = [0, 15, 30, 40, "Ad"]
+        return map((lambda x: points_possibles[x]), self._points)
 
     def points_marques_par(self, joueur):
         self.points_gagnes.append(joueur)
 
     def calcul_resultat(self):
-        points_possibles = [0, 15, 30, 40, "Ad"]
         j1 = 0
         j2 = 0
         for points in self.points_gagnes:
@@ -45,5 +45,5 @@ class PartieTennis():
                 self.jeux[1] = 0
                 self.jeux[0] = 0
                 self.score[1] += 1
-        self._points[0] = points_possibles[j1]
-        self._points[1] = points_possibles[j2]
+        self._points[0] = j1
+        self._points[1] = j2
