@@ -1,9 +1,12 @@
-class Partie_Tennis():
-    def __init__(self, points_gagnes):
-        self.points_gagnes = points_gagnes
-        self.score = [0,0]
-        self.jeux = [0,0]
-        self.points = [0,0]
+class PartieTennis():
+    def __init__(self):
+        self.points_gagnes = []
+        self.score = [0, 0]
+        self.jeux = [0, 0]
+        self.points = [0, 0]
+
+    def points_marques_par(self, joueur):
+        self.points_gagnes.append(joueur)
 
     def calcul_resultat(self):
         points_possibles = [0, 15, 30, 40, "Ad"]
