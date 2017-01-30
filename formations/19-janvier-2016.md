@@ -1,0 +1,51 @@
+On refait Hello world en dehors de exercism...
+
+- Revu les imports (différence entre `import module`, `from module import
+  function`)
+- Joué avec la variable `__name__`
+- Différence entre le [[C]] et le [[Python]] (définition des variables)
+- Refait du [[Vim]]
+- [[Git]] basic
+
+On a aussi discuter des langages et des éléments de lecture pour différencier
+les langages (compilateur, paradigme, type)
+
+Cette après midi on essaie de faire un morpion avec PyGame.
+
+Pendant l'installation de pygame nous avons vu
+
+- virtualenv et discuter des problématiques d'environnement
+- fait / vu un peu de shell
+- parlé des éléments d'un langage : 
+    - syntax (plutôt apprendre à lire la doc et les messages d'erreurs que
+      d'apprendre la syntax par coeur), 
+    - execution (comment executer mes programmes)
+    - librairies externes
+    - Core lib et Standard Lib
+    - Paradigme
+    - Compilation
+    - Type
+
+Ensuite, nous avons vu un tuto pygame, puis commencé le morpion.
+Nous avons vu pendant cet exercice: 
+
+- boucle infini du jeu
+- gestion des évènements (et interruption)
+- comment on dessine une ligne, un cercle
+- parlé des couleurs (rapidement)
+- parler des interaction utilisateur <-> os <-> programme
+- sauvegarder un état simple
+
+[Le code réalisé](https://github.com/ut7/rookie-club/commit/be9da7eb73b47b0ee496662b8e7c4f3b5cf01e0c)
+
+C'est le dernier jours, du coup on parle de ce qui serais cool de faire avant la
+prochaine fois.
+
+Simon veux finir le morpion, ça veut dire : 
+- avoir 9 cases clickable indépendante
+- ne pas pouvoir re clicker (si un rond est présent, on peut pas mettre une
+  croix et inversement)
+- l'IA peut être super bête : choisir une case vide aléatoirement
+- afficher le vainqueur (joueur ou ordi)
+- faire un bouton reset pour recommencer
+- démarrage aléatoire (ordi ou joueur)
