@@ -5,7 +5,7 @@
 - Une clef [SSH](http://fr.wikipedia.org/wiki/OpenSSH) publique.
 - [Tmux](https://tmux.github.io/) installé dessus.
 - S'assurer que [Vi(m)](http://www.vim.org/) est installé sur la machine (ou Emacs).
-- Configurer le ssh pour accueillir une session [[tmux]]
+- Configurer le ssh pour accueillir une session tmux.
 - [Optionnel] Installer [Docker](https://www.docker.com/).
 
 Les trucs pour partager une session tmux
