@@ -1,8 +1,8 @@
 ## Participants
 
-- Simon
-- Hafid
-- Yannick
+- [[Simon]]
+- [[Hafid]]
+- [[Yannick]]
 
 ## Les dernières nouvelles
 
@@ -10,7 +10,7 @@
 - Simon à fait aussi un peu de HTML avec la stagiaire CoDev pour les fiches pédagogique. Reprise de fichiers généré par un outil (SeaMonkey).
 - Hafid a vu quelqu'un pour une petite mission en MétéorJS sur Juillet. Il y a un plan pour Septembre aussi, toujours en AutoEntrepreneur.
 - Hafid a rencontrer une femme qui lui propose une sorte de réunion d'autoEntrepreneur pour faire du WordPress.
-- Hafid à fait numberToLCD, blocage sur une boucle dans une boucle...
+- Hafid à fait [Kata numberToLCD](http://codingdojo.org/kata/NumberToLCD/), blocage sur une boucle dans une boucle...
 - Demain il y a la conférence AlterConf https://www.alterconf.com/conferences/paris-france
 
 ## Ce matin
