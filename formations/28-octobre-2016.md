@@ -21,7 +21,7 @@
 
 ## Ce matin (ou ce qu'il en reste)
 
-On va essayer un bowling JavaScript en structurant le code en respectant le
+On va essayer un [kata bowling](http://codingdojo.org/kata/Bowling/) JavaScript en structurant le code en respectant le
 [paradigme
 fonctionnel](https://fr.wikipedia.org/wiki/Programmation_fonctionnelle).
 
@@ -41,7 +41,7 @@ fonctionnel](https://fr.wikipedia.org/wiki/Programmation_fonctionnelle).
 
 ## Cet après midi
 
-On reprend le [[Kata Bowling|/sujets_exercices/bowling_score]] en [[JavaScript]] de ce matin.
+On reprend le [Kata Bowling](http://codingdojo.org/kata/Bowling/) en [[JavaScript]] de ce matin.
 
 Simon, en pleine forme, prend le clavier, pendant qu'Hafid médite sur la double
 affectations.

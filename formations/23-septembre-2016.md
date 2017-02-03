@@ -21,7 +21,7 @@
 
 ## Ce matin
 
-On fait un bowling en JavaScript, au format mobProgramming.
+On fait un [bowling](http://codingdojo.org/kata/Bowling/) en JavaScript, au format mobProgramming.
 
 1er debrief.
 

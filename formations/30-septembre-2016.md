@@ -52,7 +52,7 @@ fini par arriver.
 
 ## Cette après-midi
 
-On envisage de faire un kata bowling coté client en JavaScript.
+On envisage de faire un [kata bowling](http://codingdojo.org/kata/Bowling/) coté client en JavaScript.
 
 - Nous avons crée une branche orpheline `git checkout --orphan <branchname>`.
 - Ensuite nous avons initialisés la branche.
