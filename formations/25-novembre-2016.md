@@ -7,7 +7,7 @@
 
 ## Depuis la dernière fois
 
-- Simon a essayé de faire la [[fourmi de langton]] en [[Python]] en
+- Simon a essayé de faire la [[fourmi de langton|/sujets_exercices/langton]] en [[Python]] en
   fonctionnel. Mais en fait il a essayé de la faire en pygame.
 - Yohann aussi à essayé en Python, mais sans vraiment savoir comment faire la
   partie interface graphique.
