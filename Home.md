@@ -5,7 +5,7 @@ accompagner :
 
 Les cours sont assurés par [ut7](http://ut7.fr).
 
-Vous pouvez lire les [[journaux de la formation]]
+Vous pouvez lire les [[journaux de la formation]], ou directement les [[notes]]
 
 Si vous voulez :
 - participer en tant qu'apprenant/e
