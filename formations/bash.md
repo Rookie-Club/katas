@@ -1,7 +1,7 @@
 # Bash
 
-[Site officiel](https://www.gnu.org/software/bash/) [Exemple syntaxe
-learnXinYminutes](https://learnxinyminutes.com/docs/bash/)
+- [Site officiel](https://www.gnu.org/software/bash/) 
+- [Exemple syntaxe learnXinYminutes](https://learnxinyminutes.com/docs/bash/)
 
 - Paradigme: Impératif
 - Typage: Dynamique
