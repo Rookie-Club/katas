@@ -35,7 +35,7 @@ rappel que j'aurais pu utiliser le `.` pour répéter la commande \o/.
 
 ## Ce qu'ont pourrait faire cette après midi
 
-* Faire un FizzBuzz en [[Python]]
+* Faire un [kata FizzBuzz](http://codingdojo.org/kata/FizzBuzz/) en [[Python]]
 * Faire Romain -> Arabe en [[Python]]
 
 ## Cet après midi,
