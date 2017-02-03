@@ -41,7 +41,7 @@ fonctionnel](https://fr.wikipedia.org/wiki/Programmation_fonctionnelle).
 
 ## Cet après midi
 
-On reprend le [[Kata Bowling]] en [[JavaScript]] de ce matin.
+On reprend le [[Kata Bowling|/sujets_exercices/bownling_score]] en [[JavaScript]] de ce matin.
 
 Simon, en pleine forme, prend le clavier, pendant qu'Hafid médite sur la double
 affectations.
