@@ -66,7 +66,7 @@ Options envisagées :
 - Fourmi de Langton en Clojure (en TDD).
 - Fourmi de Langton en Python objet.
 - Kata Diamant.
-- Kata Numbers in Words
+- [Kata Numbers in Words](http://codingdojo.org/kata/NumbersInWords/)
 
 
 On a fait un Kata Numbers In Words en Python, en mode cuisine à code. Hafid a

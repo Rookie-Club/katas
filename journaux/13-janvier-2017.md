@@ -1,10 +1,10 @@
 ## Participants
 
-- Hafid
-- Yohann
-- Marine
-- Simon
-- Yannick
+- [[Hafid]]
+- [[Yohann]]
+- [[Marine]]
+- [[Simon]]
+- [[Yannick]]
 
 ## Depuis la dernière fois ?
 
