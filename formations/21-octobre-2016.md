@@ -14,7 +14,7 @@
   3D](https://www.meetup.com/fr-FR/Objets-3D-Programmables-app-objets/events/234970346/).
 - [[Simon]] découvre que certaines évidentes pour lui ne le sont pas forcement
   pour les autres.
-- [[Simon]] et [[Hafid]] ont essayé de faire une [[fourmi de langton]] en
+- [[Simon]] et [[Hafid]] ont essayé de faire une [[fourmi de langton|/sujets_exercices/langton]] en
   [[JavaScript]].
 - [[Hafid]] a fait de la peinture.
 - [[Hafid]] a tenté de faire pas à pas, mais il en a oublié qu'en objet il faut
