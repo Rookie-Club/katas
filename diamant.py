@@ -1,7 +1,10 @@
 def diamant(lettre):
     k = ord(lettre) - 65
+
+    diamant = k*" "+chr(65)
+    if lettre == "A":
+        return diamant
     if lettre == "B":
-        return k*" "+"A\nB B\n"+k*" "+"A"
+        return diamant + "\nB"+ (2*k-1)*" "+"B\n"+ diamant
     if lettre == "C":
-        return k*" "+"A"+"\n"+" "+"B"+"\n"+"C"+(k+1)*" "+"C"+"\n"+" "+"B"+"\n"+k*" "+"A"
-    return "A"
+        return diamant + "\n"+" "+"B"+"\n"+"C"+(2*k-1)*" "+"C"+"\n"+" "+"B"+"\n" + diamant
