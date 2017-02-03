@@ -47,7 +47,7 @@ On regarde la fourmi de langton en python écrit par Simon.
 
 ## Pour la prochaine fois, au choix
 
-- [[Langton objet]]
-- [[Langton fonctionnel]]
-- [[Bowling objet]]
-- [[Bowling fonctionnel]]
+- Langton objet
+- Langton fonctionnel
+- Bowling objet
+- Bowling fonctionnel
