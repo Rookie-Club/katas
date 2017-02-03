@@ -18,7 +18,7 @@
 
 ## Ce matin
 
-Refaire le jeu de nim à partir de 0, en objet. On fait mobProgramming rotatif
+Refaire le [Kata jeu de nim](http://codingdojo.org/kata/Nim/) à partir de 0, en objet. On fait mobProgramming rotatif
 en 10 minutes.
 
 1er: Hafid pilote, Yohann scribe, Simon observe

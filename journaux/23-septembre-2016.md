@@ -52,7 +52,7 @@ On fait un [bowling](http://codingdojo.org/kata/Bowling/) en JavaScript, au form
 
 ## Cette après midi
 
-Yannick fait un Kata Jeu de Nim en Java
+Yannick fait un [Kata Jeu de Nim](http://codingdojo.org/kata/Nim/) en Java
 
 - «Gradle ça à l'air plus sympa que Maven» --Yannick
 - Découverte de possibilité de changer la portée des méthodes en Java `public

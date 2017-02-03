@@ -20,7 +20,7 @@ _où est Mélanie ?_
 
 ## Ce matin
 
-On fait un jeu de nim, en python, avec des objets, en travaillant avec un
+On fait un [kata jeu de nim](http://codingdojo.org/kata/Nim/), en python, avec des objets, en travaillant avec un
 piote, un navigateur et un observateur. Break, debreif et rotation toutes les
 20 minutes.
 

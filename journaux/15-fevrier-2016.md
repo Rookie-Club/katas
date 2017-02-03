@@ -34,7 +34,7 @@
 
 ## Ce qui se passe cette après midi
 
-* Simon essaie de faire un jeu de nim en console, tout seul. 
+* Simon essaie de faire un [jeu de nim](http://codingdojo.org/kata/Nim/) en console, tout seul. 
 * Parti sur la représentation des données (faire un tableau avec des 0, puis mettre des 1 quand les tiges sont prisent)
 * Découvre en cours de route que c'est plus simple de gérer la longueur du tableau seulement
 * A essayé d'avoir le moins de variable possible

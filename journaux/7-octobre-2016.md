@@ -21,7 +21,7 @@
 
 ## Ce matin.
 
-Un jeu de nim en JavaScript en cuisine.
+Un [kata jeu de nim](http://codingdojo.org/kata/Nim/) en JavaScript en cuisine.
 
 Après 2 rounds dans le sens Simon-Yohann-Hafid
 

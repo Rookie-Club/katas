@@ -8,7 +8,7 @@
 ## Ce qui se passe ce matin
 
 * Tmux configuration pour binomage (ssh)
-* Relecture du nim
+* Relecture du [kata jeu de nim](http://codingdojo.org/kata/Nim/)
 * Reusinage des fonctions
 * On decouvre la gestion des exceptions/erreurs
 * On introduit une classe d'erreur fait maison

@@ -22,7 +22,7 @@ Yohann est en congé
 
 ## Ce matin
 
-Pour explorer la structure d'un serveur, nous allons faire un jeu de nim en
+Pour explorer la structure d'un serveur, nous allons faire un [kata jeu de nim](http://codingdojo.org/kata/Nim/) en
 réseau.
 
 Premier debrief

@@ -4,7 +4,7 @@ Aujourd'hui on accueil Yohann pour une matinée de test. Yohann utilise pour l'i
 ## Ce que nous pourrions faire ce matin
 
 * Lire du code sur OpenFisca (un commit, et une classe)
-* Revoir les objets dans un jeu de nim
+* Revoir les objets dans un [kata jeu de nim](http://codingdojo.org/kata/Nim/)
 
 
 ## Ce qui s'est passé ce matin
