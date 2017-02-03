@@ -1,10 +1,10 @@
 ## Participants
 
-- Simon
-- Yannick
-- Yohann
-- Hafid
-- Mélanie
+- [[Simon]]
+- [[Yannick]]
+- [[Yohann]]
+- [[Hafid]]
+- [[Mélanie]]
 
 ## Depuis la dernière fois
 
@@ -28,7 +28,7 @@ Nous avons finalement parlé et joué avec le terminal et du `bash`
 - C'est peut-être pas mal de commencer par ce langage.
 - Pour lancer un programme `chromium --app=http://localhost`
 
-On a ajouté un script shell pour démarrer un démineur que nous avions écrit en
+On a ajouté un script shell pour démarrer un [démineur](http://codingdojo.org/kata/Minesweeper/) que nous avions écrit en
 `python`, voir `git checkout script-shell-demarrage-pour-demineur-python && cat
 demineur/web/deminer`, ou voir [sur
 github](https://github.com/ut7/rookie-club/releases/tag/script-shell-demarrage-pour-demineur-python)

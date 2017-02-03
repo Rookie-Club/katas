@@ -12,7 +12,7 @@
   :-(.
 - Simon a fait garderie : atelier KCC(Kids Coding Code) chez Codev. Utilisation
   de bloc de command dans minecraft.
-- Hafid à essayé de refaire le démineur en web.
+- Hafid à essayé de refaire le [démineur](http://codingdojo.org/kata/Minesweeper/) en web.
   - Embarqué dans des triples boucles, il s'est perdu, puis réussi à générer
     une grille.
   - Il a utiliser `element.cloneNode();`.
