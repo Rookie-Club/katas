@@ -3,7 +3,12 @@ def draw_diamond(letter)
 end
 
 def draw_triangle(letter)
-	return 'A\nB ' if letter == 'B'
+	lines = []
+	(1..alphabet_position(letter)).each do |i|
+		lines << ' ' * ( alphabet_position(letter) - i) + letter(i) + ' ' * (i - 1)
+	end 
+
+	return lines.join("\n")
 end
 
 def alphabet_position(letter)
