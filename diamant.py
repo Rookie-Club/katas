@@ -8,3 +8,12 @@ def diamant(lettre):
     triangle_inverse = list(reversed(triangle))
     diamant = triangle + triangle_inverse[1:]
     return "\n".join(diamant)
+
+if __name__ == "__main__":
+    while True:
+        lettre = (input("Entrez une lettre\n")).upper()
+        print(diamant(lettre))
+        continuer = input("Jouer encore? (y/n)\n")
+        if continuer == "n":
+            print("Merci au revoir")
+            break
