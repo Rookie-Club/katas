@@ -1,10 +1,10 @@
 def diamant(lettre):
     k = ord(lettre) - 65
-
-    diamant = k*" "+chr(65)
-    if lettre == "A":
-        return diamant
-    if lettre == "B":
-        return diamant + "\nB"+ (2*k-1)*" "+"B\n"+ diamant
-    if lettre == "C":
-        return diamant + "\n"+" "+"B"+"\n"+"C"+(2*k-1)*" "+"C"+"\n"+" "+"B"+"\n" + diamant
+    triangle = [k*" " + chr(65)]
+    ligne = 1
+    while (ligne < k+1):
+        triangle.append((k - ligne) * " " +chr(65 + ligne) + (2 * (ligne - 1) +1) * " " + chr(65 + ligne))
+        ligne += 1
+    triangle_inverse = list(reversed(triangle))
+    diamant = triangle + triangle_inverse[1:]
+    return "\n".join(diamant)

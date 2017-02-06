@@ -9,7 +9,7 @@ class TestDiamant(unittest.TestCase):
         self.assertEqual(" A\nB B\n A", diamant("B"))
 
     def test_C(self):
-        self.assertEqual("  A\n B\nC   C\n B\n  A", diamant("C"))
+        self.assertEqual("  A\n B B\nC   C\n B B\n  A", diamant("C"))
 
 
 unittest.main()
