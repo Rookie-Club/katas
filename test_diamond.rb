@@ -7,14 +7,9 @@ class TestDiamond < Minitest::Test
     assert_equal 'A', draw_diamond('A')
   end
 
-  def test_B_diamond
-    assert_equal 'A\nB B\nA', draw_diamond('B')
+  def test_B_triangle
+  	assert_equal 'A\nB ', draw_triangle('B')
   end
-
-  def test_C_diamond
-    assert_equal 'A\nB B\nC  C\nB B\nA', draw_diamond('C')
-  end
-
 
 end
 
