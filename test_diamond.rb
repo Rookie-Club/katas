@@ -11,5 +11,13 @@ class TestDiamond < Minitest::Test
   	assert_equal 'A\nB ', draw_triangle('B')
   end
 
+  def test_letter_to_alphabet_position
+  	assert_equal 26, alphabet_position('Z')
+  end
+
+  def test_alphabet_position_to_letter
+  	assert_equal 'A', letter(1)
+  end
+
 end
 
