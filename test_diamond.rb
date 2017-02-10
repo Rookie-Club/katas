@@ -4,15 +4,15 @@ require './diamond'
 class TestDiamond < Minitest::Test
 
   def test_A_triangle
-    assert_equal 'A', draw(triangle('A'))
+    assert_equal ['A'], triangle('A')
   end
   
   def test_B_triangle
-  	assert_equal " A\nB ", draw(triangle('B'))
+  	assert_equal [" A", "B "], triangle('B')
   end
 
   def test_C_triangle
-  	assert_equal "  A\n B \nC  ", draw(triangle('C'))
+  	assert_equal ["  A"," B ","C  "], triangle('C')
   end
 
   def test_letter_to_alphabet_position
@@ -24,19 +24,19 @@ class TestDiamond < Minitest::Test
   end
 
   def test_B_triangle_horizontal_flip
-    assert_equal " A\nB \n A", draw(flip_horizontal((triangle('B'))))
+    assert_equal [" A", "B "," A"], flip_horizontal((triangle('B')))
   end
 
   def test_B_triangle_vertical_flip
-    assert_equal " A \nB B", draw(flip_vertical((triangle('B'))))
+    assert_equal [" A ","B B"], flip_vertical((triangle('B')))
   end
 
   def test_A_diamond
-    assert_equal 'A', draw(diamond('A'))
+    assert_equal ['A'], diamond('A')
   end
 
   def test_C_diamond
-    assert_equal "  A  \n B B \nC   C\n B B \n  A  ", draw(diamond('C'))
+    assert_equal ["  A  "," B B ","C   C"," B B ","  A  "], diamond('C')
   end
 
 end
