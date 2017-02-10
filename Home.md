@@ -14,7 +14,7 @@ Si vous voulez :
 
 envoyez nous en message [training@ut7.fr](mailto:training@ut7.fr).
 
-Au rookie club vous aurez besoin de [[prérquis technique|Les-prerequis]]
+Au rookie club vous aurez besoin de [[prérequis technique|Les-prerequis]]
 
 Le contenu de ce wiki est créé par les participants du Rookie Club. Il est
 distribué sous la licence [Creative Commons, Attribution - Pas d'utilisation
