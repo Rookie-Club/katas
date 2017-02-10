@@ -10,7 +10,7 @@ class SimonTestCase(unittest.TestCase):
 
     def test_home_page(self):
         page = self.app.get('/')
-        self.assertEqual(b'Hello World!', page.data)
+        assert b'Welcome to the homepage' in page.data
 
     def test_upload_page(self):
         page = self.app.get('/upload')
