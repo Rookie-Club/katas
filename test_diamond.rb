@@ -24,7 +24,19 @@ class TestDiamond < Minitest::Test
   end
 
   def test_B_triangle_horizontal_flip
-    assert_equal "B \n A", draw(flip_horizontal((triangle('B'))))
+    assert_equal " A\nB \n A", draw(flip_horizontal((triangle('B'))))
+  end
+
+  def test_B_triangle_vertical_flip
+    assert_equal " A \nB B", draw(flip_vertical((triangle('B'))))
+  end
+
+  def test_A_diamond
+    assert_equal 'A', draw(diamond('A'))
+  end
+
+  def test_C_diamond
+    assert_equal "  A  \n B B \nC   C\n B B \n  A  ", draw(diamond('C'))
   end
 
 end

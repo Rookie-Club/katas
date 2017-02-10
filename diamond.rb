@@ -16,12 +16,12 @@ def triangle(letter)
 end
 
 def flip_horizontal(lines)
-	lines.reverse
+	lines + lines.reverse.drop(1)
 end
 
 def flip_vertical(lines)
-	lines.each do |string|
-		string.reverse!
+	lines.each_with_index do |string,i|
+		lines[i] += string.chop.reverse! 
 	end
 end
 
@@ -29,8 +29,9 @@ def draw(lines)
 	lines.join("\n")
 end
 
-
-
+def diamond(letter)
+	flip_vertical(flip_horizontal(triangle(letter)))
+end 
 
 
 
