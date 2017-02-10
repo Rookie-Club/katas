@@ -11,18 +11,23 @@ class SimonTestCase(unittest.TestCase):
     def test_home_page(self):
         page = self.app.get('/')
         assert b'Welcome to the homepage' in page.data
+        assert b'upload' in page.data
+        assert b'references' in page.data
+        assert b'generate' in page.data
 
     def test_upload_page(self):
         page = self.app.get('/upload')
-        self.assertEqual(b'on est sur la page upload', page.data)
+        assert b'upload' in page.data
+        assert b'<form action="/upload" method="post"' in page.data
+        assert b'type="submit"' in page.data
 
     def test_references_page(self):
         page = self.app.get('/references')
-        self.assertEqual(b'on est sur la page references', page.data)
+        assert b'references' in page.data
 
     def test_generate_page(self):
         page = self.app.get('/generate')
-        self.assertEqual(b'on est sur la page generate', page.data)
+        assert b'generate' in page.data
 
 if __name__ == '__main__':
     unittest.main()

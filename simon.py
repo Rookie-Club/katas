@@ -8,15 +8,15 @@ def home():
 
 @app.route("/upload")
 def upload():
-    return "on est sur la page upload"
+    return render_template('upload.html')
 
 @app.route("/references")
 def references():
-    return "on est sur la page references"
+    return render_template('references.html')
 
 @app.route("/generate")
 def generate():
-    return "on est sur la page generate"
+    return render_template('generate.html')
 
 if __name__ == "__main__":
     app.run()
