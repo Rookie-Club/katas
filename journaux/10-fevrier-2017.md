@@ -61,7 +61,32 @@ C'était bien de revoir du code écrit entre deux sessions.
 
 ## Cet après midi
 
+On essaye de faire un site qui génère du texte à partir d'autres textes qu'on aurait fourni via un formulaire.
+
+4 pages : `home`, `upload`, `references` et `generate`.
+
+- Sur Upload : un formulaire pour saisir du texte ou uploader un fichier.
+- Sur references : une listes des textes saisis/entrés
+- Sur generate : un formulaire avec taille du texte à générer et un bouton pour le lancer. Une zone pour l'afficher.
+- Sur la home : un texte explicatif.
+
+L'idée était de mettre en place un site avec base de donnée, s'appuyer sur un algorithme basé sur les chaines de markov pour générer du texte.
+
+Les rookies ont travaillé tous ensemble en Python. Ça nous a permis d'aborder les problématiques de stratégie, de travail en équipe, de préparation du travail.
+
+Ce qu'on en retient :
+- C'est bien de travailler sur un truc plus gros, plus proche de ce qu'on voit
+  _dehors_.
+- Ça permet de regarder des librairies (ici [Flask](http://flask.pocoo.org/)).
+- La différence entre un kata et ce genre d'exercice, c'est le bruit autour, et
+  c'est bien de pouvoir appréhender le bruit autour.
+- On peut ajouter des emoticon texte dans les message 🚀 (http://emojipedia.org/)
+- Ce qui est intéressant aussi avec ce genre de format, c'est de s'entrainer à
+  travailler en groupe.
+
 
 ## Pour la prochaine fois
 
-Essayer de faire tourner un petit site, une application, un exercice dans un container (docker ou autre).
+Essayer de faire tourner un petit site, une application, un exercice dans un
+container (docker ou autre).
+
