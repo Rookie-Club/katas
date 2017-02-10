@@ -54,3 +54,14 @@ On pourrait :
 - Faire du PHP.
 - Faire du Docker.
 
+On a revu le code Python et Ruby du kata Diamant.
+
+C'était bien de revoir du code écrit entre deux sessions.
+
+
+## Cet après midi
+
+
+## Pour la prochaine fois
+
+Essayer de faire tourner un petit site, une application, un exercice dans un container (docker ou autre).
