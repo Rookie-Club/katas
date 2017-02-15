@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# ** coding=utf8 **
+
+
 def diamond(letter):
 
   alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -19,3 +23,19 @@ def diamond(letter):
       diamond = "\n".join(letter_list) + "\n".join(reversed(letter_list)).replace(letter_list[-1], "")
       print diamond
       return diamond
+
+if __name__ == "__main__":
+
+  yes = raw_input("Tu veux jouer petit coquinou ? (y/n) ")
+  if yes == "y":
+    letter = raw_input("Très bien, avant cela, je vais te demander de penser très fort à une lettre de l'alphabet. Puis entre la : ")
+  if letter:
+    draw = raw_input("Tu as pensé à la lettre " + letter + ". Maintenant, dessinons un diamant jusqu'à la lettre choisi. Entre (y) pour voir le diamant ou (n) pour lancer un missile : ")
+  if draw == "y":
+      diamond(letter)
+  if yes == "n" or draw == "n":
+    raw_input("                      ____________\n"
+           "   \____________      | []    [] |\n"
+           "  ==_________|__)     |   ____   |\n"
+           "   /                  |___|__|___|\n"
+           "                                  \n")
