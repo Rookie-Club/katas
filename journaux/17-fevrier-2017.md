@@ -61,3 +61,19 @@ comme résolue.
 
 
 On va regarder ce que Marine à fait avec Docker.
+
+Ce qu'on en retient :
+- Ça parait léger une image docker, mais en fait, le `FROM`, c'est un peu comme l'héritage, avec le poids que ça représente.
+- On a parlé des noyaux système, des pilotes (driver) et autres programmes bas niveau.
+- On a executé la commande `ps -ef` et `top`
+- Découverte aussi de Ansible, et la possibilité de s'en servir pour faire des backups.
+- On a parlé aussi des deux modes d'executions d'un programme : démon et interactif.
+- «Les programmes démons sont une forme de consience pour l'ordinateur» --Hafid
+- C'est quoi le process TTYS ? => «Talk To You Soon»
+- On parle de [Mutt](http://www.mutt.org/)
+
+
+## Cette après-midi
+
+On va revoir le code produit par Hafid : un kata Diamant en Python.
+
