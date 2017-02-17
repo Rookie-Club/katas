@@ -1,0 +1,63 @@
+## Participants
+
+- Hafid
+- Marine
+- Simon
+- Yannick
+
+
+## Les questions, problèmes et envies en cours :
+
+Faut-il écrire un test par rapport à ces questions/problèmes/envies ? Un moyen
+de vérifier «quand» la question, l'envie ou le problème pourra être reconnu
+comme résolue.
+
+
+### Simon
+
+- Progresser en HTML/CSS.
+- Récolter les données d'un questionnaire (le formulaire existe déjà).
+- Comment on fait fonctionner du PHP ?
+
+
+### Hafid
+
+- Pourquoi c'est aussi compliqué d'avoir des sorties audios qui fonctionnent ?
+- Ça marche comment la reproduction des IAs ?
+- Comment fonctionne les réseaux de neuronnes ? Après avoir étudier le code
+  source de quelqu'un qui utilise TensorFlow, j'aimerais arriver à mieux
+  identifier les différents éléments.
+- Est-ce qu'on peut tout tester unitaire ? Non. Première étape : trouver quelque chose
+  qu'on ne peut pas tester.
+
+### Yohann
+
+- Progresser sur Git. Ça pourrait être savoir faire un `cherry-pick` (savoir
+  quand l'utiliser et comment).
+- Commencer à utiliser Docker. L'utiliser sur un projet.
+- Créer une première machine d'apprentissage.
+
+
+### Marine
+
+- Du mal avec l'utilisation de CSS et des alignements (bootstrap).
+- C'est quoi flexBox ?
+- J'aimerais mieux comprendre l'usage du fichier `config/database.yml`.
+- Découvrir les bonnes pratiques de backup.
+- Comment utiliser correctement la métaprogrammation ?
+- Comment se tenir au courant des nouveautés du monde du développement sans se
+  noyer ?
+- Découvrir Docker.
+- Progresser en Shell.
+- Progresser en TDD : sur la partie définition d'API via les tests ?
+- Progresser en Tests : comment tester une application complète ?
+- Améliorer mon workflow, et la manipulation des branches.
+- Comment être plus à l'aise avec les questions d'architecture ? Une première
+  étape pourrait être de lire le livre de Sandy Metz
+  [POODR](http://www.poodr.com/).
+
+
+## Ce matin
+
+
+On va regarder ce que Marine à fait avec Docker.
