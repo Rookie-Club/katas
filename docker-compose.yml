@@ -1,0 +1,13 @@
+siteweb:
+  build: .
+  port:
+    - "80:80"
+  environment:
+    - VIRTUAL_HOST=${SITE}
+  labels:
+    - traefik.enable=true
+    - traefik.frontend.rule=Host:${SITE}
+    - traefik.port=80
+  restart: always
+
+

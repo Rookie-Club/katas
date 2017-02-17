@@ -4,6 +4,8 @@ RUN gem install gollum
 RUN gem install github-markdown org-ruby 
 
 WORKDIR /wiki
+ADD . /wiki
+
 CMD ["gollum", "--port", "80"]
 EXPOSE 80
 
