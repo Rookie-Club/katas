@@ -27,8 +27,8 @@ comme résolue.
 - Comment fonctionne les réseaux de neuronnes ? Après avoir étudier le code
   source de quelqu'un qui utilise TensorFlow, j'aimerais arriver à mieux
   identifier les différents éléments.
-- Est-ce qu'on peut tout tester unitaire ? Non. Première étape : trouver quelque chose
-  qu'on ne peut pas tester.
+- Est-ce qu'on peut tout tester unitaire ? Non. Première étape : trouver
+  quelque chose qu'on ne peut pas tester.
 
 ### Yohann
 
@@ -63,11 +63,15 @@ comme résolue.
 On va regarder ce que Marine à fait avec Docker.
 
 Ce qu'on en retient :
-- Ça parait léger une image docker, mais en fait, le `FROM`, c'est un peu comme l'héritage, avec le poids que ça représente.
-- On a parlé des noyaux système, des pilotes (driver) et autres programmes bas niveau.
+- Ça parait léger une image docker, mais en fait, le `FROM`, c'est un peu comme
+  l'héritage, avec le poids que ça représente.
+- On a parlé des noyaux système, des pilotes (driver) et autres programmes bas
+  niveau.
 - On a executé la commande `ps -ef` et `top`
-- Découverte aussi de Ansible, et la possibilité de s'en servir pour faire des backups.
-- On a parlé aussi des deux modes d'executions d'un programme : démon et interactif.
+- Découverte aussi de Ansible, et la possibilité de s'en servir pour faire des
+  backups.
+- On a parlé aussi des deux modes d'executions d'un programme : démon et
+  interactif.
 - «Les programmes démons sont une forme de consience pour l'ordinateur» --Hafid
 - C'est quoi le process TTYS ? => «Talk To You Soon»
 - On parle de [Mutt](http://www.mutt.org/)
@@ -77,3 +81,12 @@ Ce qu'on en retient :
 
 On va revoir le code produit par Hafid : un kata Diamant en Python.
 
+On en discute et on refactore.
+
+On a utilisé des principes du perfection game pour commenter le code, c'était
+plutôt chouette.
+
+Par contre, tout le monde est fatigué. On arrête tôt.
+
+**Attention, peut-être que la lecture de code en début d'après-midi c'est pas
+top, il faut que les rookies soient actif !**
