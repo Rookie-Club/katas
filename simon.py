@@ -9,8 +9,10 @@ def home():
 @app.route("/upload", methods=['GET','POST'])
 def upload():
     if request.method == 'POST':
-        f = request.files['file']
-        f.save('uploaded_file')
+        uploaded_file  = request.files['file']
+        if uploaded_file.filename == '':
+            return redirect('/upload')
+        uploaded_file.save('uploaded_file')
         return redirect('/')
 
     if request.method == 'GET':
@@ -22,9 +24,9 @@ def references():
 
 @app.route("/generate")
 def generate():
-    f = open('uploaded_file', 'r')
-    content_f = f.read()
-    return render_template('generate.html', content_f = content_f)
+    uploaded_file = open('uploaded_file', 'r')
+    uploaded_content = uploaded_file.read()
+    return render_template('generate.html', uploaded_content = uploaded_content)
 
 if __name__ == "__main__":
     app.run()
