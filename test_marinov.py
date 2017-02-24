@@ -6,8 +6,16 @@ class TestMarkov(unittest.TestCase):
         text = "je suis une loutre je mange du thé"
         self.assertEqual(["je", "suis", "une", "loutre", "je", "mange", "du", "thé"], get_words(text))
 
-    def test_pick_second_word_options(self):
+    def test_pick_second_word_with_one_option(self):
+        text = get_words("je suis une loutre je mange du thé")
+        word = "une"
+        self.assertEqual("loutre", get_next_word(word, text))
+        word = "suis"
+        self.assertEqual("une", get_next_word(word, text))
+
+    def test_pick_second_word_with_2_options(self):
+        text = get_words("je suis une loutre je mange du thé")
         word = "je"
-        self.assertEqual(["suis", "mange"], get_next_possible(word))
-    def test_pick_next_word
+        self.assertIn(get_next_word(word, text), ["suis", "mange"])
+
 unittest.main()
