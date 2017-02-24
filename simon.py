@@ -22,7 +22,9 @@ def references():
 
 @app.route("/generate")
 def generate():
-    return render_template('generate.html')
+    f = open('uploaded_file', 'r')
+    content_f = f.read()
+    return render_template('generate.html', content_f = content_f)
 
 if __name__ == "__main__":
     app.run()
