@@ -1,14 +1,20 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 @app.route("/")
 def home():
     return render_template('home.html')
 
-@app.route("/upload")
+@app.route("/upload", methods=['GET','POST'])
 def upload():
-    return render_template('upload.html')
+    if request.method == 'POST':
+        f = request.files['file']
+        f.save('uploaded_file')
+        return redirect('/')
+
+    if request.method == 'GET':
+        return render_template('upload.html')
 
 @app.route("/references")
 def references():
