@@ -18,4 +18,9 @@ class TestMarkov(unittest.TestCase):
         word = "je"
         self.assertIn(get_next_word(word, text), ["suis", "mange"])
 
+    def test_pick_second_word_with_current_word_at_end(self):
+        text = get_words("je suis une loutre je mange du thé")
+        word = "thé"
+        self.assertIn(get_next_word(word, text), text)
+
 unittest.main()

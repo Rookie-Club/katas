@@ -9,5 +9,11 @@ def get_next_word(current_word, text):
         return text[word_choice]
 
 def get_next_words_positions(current_word, text):
-        positions_next_word = [position + 1  for position, text_words  in enumerate(text) if text_words  == current_word]
+        positions_next_word =[]
+        for position, text_words  in enumerate(text):
+            if text_words  == current_word:
+                if current_word  == text[-1]:
+                    positions_next_word.append(random.randint(0, position))
+                else:
+                    positions_next_word.append(position+1)
         return positions_next_word
