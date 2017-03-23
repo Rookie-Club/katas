@@ -1,7 +1,6 @@
 LAGS
 ====
 
-[source](http://acmicpc-live-archive.uva.es/nuevoportal/data/problem.php?p=2942)
 
 ABEAS Corp est une toute petite entreprise qui possède un seul avion. Les
 clients d'ABEAS Corp sont de grandes compagnies qui louent l'avion pour
