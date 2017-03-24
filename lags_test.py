@@ -1,32 +1,27 @@
+
 import unittest
+from lags import *
 
-def gain_max(vols):
-
-    gain = 0
-
-    for vol in vols:
-        gain += prix(vol)
-
-    if vols == [[0,1,1],[0,1,5]]:
-        gain = 5
-
-    return gain
-
-def prix(vol):
-    return vol[2]
 
 class LagsTest(unittest.TestCase):
-    def test_pas_de_vols_vaut_0(self):
-        self.assertEqual(0, gain_max([]))
 
-    def test_1_seul_vol_vaut_1(self):
-        self.assertEqual(1, gain_max([[0,1,1]]))
+    def setUp(self):
+        self.fly_list = [["AF514", 0, 5, 10], 
+            ["CO5", 3, 7, 14], 
+            ["AF515", 5, 9, 7], 
+            ["BA01", 6, 9, 8]]
 
-    def test_2_vols_compatibles_vaut_2(self):
-        self.assertEqual(2, gain_max([[0,1,1], [1,1,1]]))
+    def test_we_got_a_fly(self):
+        self.assertEqual(True, check_fly(self.fly_list))
 
-    def test_2_vols_incompatibles_vaut_5(self):
-        self.assertEqual(5, gain_max([[0,1,1], [0,1,5]]))
+    def test_check_max_price(self):
+        self.assertEqual(14, check_max_gain(self.fly_list))
+
+    def test_check_hours(self):
+        self.assertEqual([[0, 5], [3, 10], [5, 14], [6, 15]], check_hours(self.fly_list))
+
+    def test_check_compatibility(self):
+        self.assertEqual([[0, 2], [0, 3]], check_fly_compatibility(self.fly_list))
 
 
 if __name__ == "__main__":
