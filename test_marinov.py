@@ -3,8 +3,8 @@ from marinov import *
 
 class TestMarkov(unittest.TestCase):
     def test_split_string(self):
-        text = "je suis une loutre je mange du thé"
-        self.assertEqual(["je", "suis", "une", "loutre", "je", "mange", "du", "thé"], get_words(text))
+        text = "je suis une loutre, je bois de la soupe"
+        self.assertEqual([["je", "suis", "une", "loutre"],["je", "bois", "de", "la", "soupe"]], get_words(text))
 
     def test_pick_second_word_with_one_option(self):
         text = get_words("je suis une loutre je mange du thé")

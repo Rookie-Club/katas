@@ -1,7 +1,11 @@
 import random
 
 def get_words(text):
-    return text.split(' ')
+    words = []
+    sentences = text.split(", ")
+    for i in sentences:
+        words.append(i.split(" "))
+    return words
 
 def get_next_word(current_word, text):
         positions = get_next_words_positions(current_word, text)
