@@ -18,4 +18,11 @@ def convert(number):
         inter = ""
     if number <= 16:
         return dico[number]
+    if number == 71:
+        return "soixante-et-onze"
+    if number == 81:
+        return "quatre-vingt-un"
+    if (number > 71 and number < 80) or (number > 90 and number < 99):
+        inter = "-"
+        return dixco[number//10*10-10] + inter + dico[number%10 +10]
     return dixco[number//10*10] + inter + dico[number%10]

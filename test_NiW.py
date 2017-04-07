@@ -21,5 +21,14 @@ class TestNiW(unittest.TestCase):
     def test_20_vaut_vingt(self):
         self.assertEqual("vingt", convert(20))
 
+    def test_71_vaut_soixante_et_onze(self):
+        self.assertEqual("soixante-et-onze", convert(71))
+
+    def test_72_vaut_soixante_douze(self):
+        self.assertEqual("soixante-douze", convert(72))
+
+    def test_77_vaut_soixante_dix_sept(self):
+        self.assertEqual("soixante-dix-sept", convert(77))
+
 
 unittest.main()
