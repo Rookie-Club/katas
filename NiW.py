@@ -1,3 +1,5 @@
+import time
+
 dico = {0 : "", 1 : "un", 2 : "deux", 3 : "trois", 
         4 : "quatre", 5 : "cinq", 6 : "six", 7 : "sept", 
         8 :  "huit", 9 : "neuf", 10 : "dix", 11 : "onze", 
@@ -46,3 +48,16 @@ def inter(number):
             inter = "-"
 
     return inter
+
+if __name__ == "__main__":
+#    number = 1
+#    while number in range(1, 101):
+#        number = int(raw_input("Select a number between 1 and 100\n"))
+#        print(convert(number))
+#    print("We said between 1 and 100, you're out... b**ch !")
+
+    print("We're gonna count the sheep... let's go")
+    for i in range(1, 101):
+        print(convert(i))
+        time.sleep(0.5)
+    print("NOW SLEEP B*TCH")
