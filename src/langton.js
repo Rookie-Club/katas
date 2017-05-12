@@ -18,12 +18,6 @@ function Fourmi (position_initiale, direction_initiale, cases_noires) {
   };
 
   this.change_direction = function () {
-    var tableau_conversion = {
-      "Ouest" : [-1, 0],
-      "Nord": [0, 1],
-      "Est": [1, 0],
-      "Sud": [0, -1]
-    };
     if (is_in_array(this.cases_noires, this.position_actuelle)){
       this.direction_actuelle =[this.direction_actuelle[1]*-1, this.direction_actuelle[0]*1];
     } else {
