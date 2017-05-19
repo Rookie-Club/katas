@@ -4,7 +4,10 @@ function Fourmi (position_initiale, direction_initiale, cases_noires) {
   this.cases_noires = cases_noires;
 
   this.avance = function () {
-        this.change_couleur();
+        var position_actuelle = this.position_actuelle;
+        var direction_actuelle = this.direction_actuelle;
+        var cases_noires = this.cases_noires;
+        this.change_couleur(position);
         this.position_actuelle = [3, 5];
         this.direction_actuelle = [1, 0];
   };
@@ -23,6 +26,10 @@ function Fourmi (position_initiale, direction_initiale, cases_noires) {
     } else {
       this.direction_actuelle = [this.direction_actuelle[1]*1, this.direction_actuelle[0]*-1];
     }
+  };
+
+  this.change_position = function () {
+    this.direction_actuelle = [1, 0];
   };
 };
 

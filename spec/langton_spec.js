@@ -15,9 +15,10 @@ describe( "La Fourmi de Langton", function () {
     expect(fourmi.cases_noires).toEqual([[3, 4]]);
   });
   it("une fourmi sur case noire, tourne à  90° vers la gauche", function () {
-    var fourmi = new Fourmi([3, 4], [-1, 0], []);
+    var fourmi = new Fourmi([3, 4], [-1, 0], [3, 4]);
     fourmi.change_direction();
-    expect(fourmi.direction_actuelle).toEqual([0, 1]);
+    expect(fourmi.direction_actuelle[0] == 0).toEqual(true);
+    expect(fourmi.direction_actuelle[1] == -1).toEqual(true);
   });
   it("une fourmi sur case blanche, tourne à  90° vers la droite", function () {
     var fourmi = new Fourmi([3, 4], [-1, 0], []);
