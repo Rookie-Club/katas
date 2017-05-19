@@ -1,49 +1,32 @@
 import unittest
 from tennis import *
 
-class TestTennis(unittest.TestCase):
-    def test_partie_existe(self):
-        partie = Partie()
-        self.assertEqual(partie.points_gagnes, [0,0])
 
-    def test_joueur_A_gagne_la_partie_2_a_1(self):
-        partie = Partie()
-        partie.gagne_set("A")
-        partie.gagne_set("B")
-        partie.gagne_set("A")
-        self.assertEqual(partie.terminee(), "A")
+class TennisTest(unittest.TestCase):
+    def test_no_one_scor(self):
+        points = []
+        self.assertEqual([0, 0], match(points))
 
-    def test_joueur_A_gagne_un_set_6_a_0(self):
-        partie = Partie()
-        for i in range (6):
-            partie.gagne_jeu("A")
-        self.assertEqual(partie.sets_gagnes, ["A"])
+    def test_player_1_scor(self):
+        points = ["p1"]
+        self.assertEqual([15, 0], match(points))
 
-    def test_joueur_A_gagne_un_set_7_a_6(self):
-        partie = Partie()
-        for i in range (5):
-            partie.gagne_jeu("B")
-        for i in range (6):
-            partie.gagne_jeu("A")
-        partie.gagne_jeu("B")
-        partie.gagne_jeu("A")
-        self.assertEqual(partie.sets_gagnes, ["A"])
+    def test_player_2_scor(self):
+        points = ["p2"]
+        self.assertEqual([0, 15], match(points))
 
-    def test_joueur_A_gagne_un_set_40_0(self):
-        partie = Partie()
-        for i in range(4):
-            partie.gagne_point("A")
-        self.assertEqual(partie.jeux_gagnes[0], 1)
+    def test_player_1_scor_2_time(self):
+        points = ["p1", "p1"]
+        self.assertEqual([30, 0], match(points))
 
-    def test_joueur_A_gagne_un_set_Av_a_40(self):
-        partie = Partie()
-        for i in range(3):
-            partie.gagne_point("A")
-        for i in range(3):
-            partie.gagne_point("B")
-        partie.gagne_point("A")
-        partie.gagne_point("A")
-        self.assertEqual(partie.jeux_gagnes[0], 1)
+    def test_player_1_take_advantage(self):
+        points = ["p1", "p1", "p1", "p2", "p2", "p2", "p1"]
+        self.assertEqual(["advantage", 40], match(points))
+
+    def test_player_1_take_set(self):
+        points = ["p1", "p1", "p1", "p1"]
+        self.assertEqual([30, 0], match(points))
 
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
