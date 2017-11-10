@@ -1,3 +1,4 @@
 *.swp
 *.pyc
 */.gradle/
+.DS_Store
