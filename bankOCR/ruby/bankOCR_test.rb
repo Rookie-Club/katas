@@ -34,7 +34,7 @@ class BankOCRTest < Minitest::Test
       "  | _|", 
       "  ||_ "
     ]
-    result = remove_backslash_n(string)
+    result = split_ascii_no_backslash_n(string)
     assert_equal(expected, result)
   end
 
