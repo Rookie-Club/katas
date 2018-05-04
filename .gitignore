@@ -1,0 +1,9 @@
+*.swp
+*.pyc
+*/.gradle/
+.DS_Store
+*/node_modules/
+*/.flooignore
+*/.floo
+tennis/.idea
+*.out
