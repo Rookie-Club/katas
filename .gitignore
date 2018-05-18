@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.swp
 *.pyc
 */.gradle/
@@ -7,3 +8,6 @@
 */.floo
 tennis/.idea
 *.out
+=======
+.DS_Store
+>>>>>>> d6eed6c... Kata Roman 2 number du 18 mai
