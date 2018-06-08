@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 *.swp
 *.pyc
 */.gradle/
 .DS_Store
 */node_modules/
+=======
+.DS_Store
+>>>>>>> Affiche un diamant jusqu'à C

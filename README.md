@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kata Diamond
 
 _[source](http://codingdojo.org/kata/Diamond/)_
@@ -7,15 +8,24 @@ _[source](http://codingdojo.org/kata/Diamond/)_
 [Alistair Cockburn wrote a blog post](http://alistair.cockburn.us/Thinking+before+programming) about this kata, in response to the [Seb Rose kata proposition](http://claysnow.co.uk/recycling-tests-in-tdd/).
 
 ## Problem Description
+=======
+Problem Description
+>>>>>>> Affiche un diamant jusqu'à C
 
 Given a letter, print a diamond starting with ‘A’ with the supplied letter at the widest point.
 
 For example: print-diamond ‘C’ prints
 
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> Affiche un diamant jusqu'à C
   A
  B B
 C   C
  B B
   A
+<<<<<<< HEAD
 `
+=======
+>>>>>>> Affiche un diamant jusqu'à C
