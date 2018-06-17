@@ -1,0 +1,14 @@
+{
+  "name": "bowlinggame",
+  "version": "1.0.0",
+  "description": "Au bowling,  * on a 2 lancés (une manche) pour faire tomber 10 quilles * on fait 10 manches * score max = 300 * Si je fais tomber 10 quille en 2 fois : spare, qui me donne +10 sur la 1er quille tombé de la manche suivante.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
