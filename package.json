@@ -1,0 +1,23 @@
+{
+  "name": "rookie-club-katas",
+  "version": "1.0.0",
+  "description": "Kata : http://codingdojo.org/kata/PokerHands/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rookie-club/katas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rookie-club/katas/issues"
+  },
+  "homepage": "https://github.com/rookie-club/katas#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
