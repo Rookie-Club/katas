@@ -7,8 +7,15 @@ cursor.execute("""
 SELECT * FROM mots
 """)
 
-mots = cursor.fetchall()
-for mot in mots:
-  print(mot)
+mots = cursor.fetchone()
+print(mots)
+
+cursor.next()
+mots = cursor.fetchone()
+print(mots)
+cursor.next()
+
+mots = cursor.fetchone()
+print(mots)
 
 conn.close()
