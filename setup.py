@@ -16,6 +16,21 @@ INSERT INTO mots
   (mot, pourcentage, mot_suivant)
   VALUES ('les', 100, 'hommes')
 """)
+cursor.execute("""
+INSERT INTO mots
+  (mot, pourcentage, mot_suivant)
+  VALUES ('hommes', 100, 'libres')
+""")
+cursor.execute("""
+INSERT INTO mots
+  (mot, pourcentage, mot_suivant)
+  VALUES ('libres', 50, 'peuvent')
+""")
+cursor.execute("""
+INSERT INTO mots
+  (mot, pourcentage, mot_suivant)
+  VALUES ('libres', 50, 'ou')
+""")
 conn.commit()
 
 conn.close()
