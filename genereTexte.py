@@ -3,9 +3,12 @@ import sqlite3
 conn = sqlite3.connect('mots.sqlite3')
 
 cursor = conn.cursor()
-print(cursor.execute("""
+cursor.execute("""
 SELECT * FROM mots
-"""))
-conn.commit()
+""")
+
+mots = cursor.fetchall()
+for mot in mots:
+  print(mot)
 
 conn.close()
