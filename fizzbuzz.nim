@@ -9,3 +9,11 @@ proc fizzbuzz*(number: int): string =
     "buzz"
   else:
     intToStr(number)
+
+when isMainModule:
+  import os
+
+  echo "Welcome to fizzbuzz, please enter a number"
+
+  let number = readLine stdin
+  echo "FizzBuzz(", number, ") == ", fizzbuzz(parseInt(number))
