@@ -1,0 +1,5 @@
+*.swp
+*.pyc
+*/.gradle/
+.DS_Store
+*/node_modules/
