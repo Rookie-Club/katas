@@ -69,4 +69,38 @@ describe("Gilded Rose shop", function() {
   });
 
 
+  describe("changeSellIn", function () {
+    it("returns a new item with sellIn decreased by one", function () {
+      const item = new Item("truc", 3, 5);
+      const newItem = decreaseSellIn(item);
+      expect(newItem.sellIn).toEqual(2);
+    });
+
+    it("Sulfuras, Hand of Ragnaros", function () {
+      const item = new Item("Sulfuras, Hand of Ragnaros", 3, 5);
+      const newItem = decreaseSellIn(item);
+      expect(newItem.sellIn).toEqual(3);
+    });
+  });
+
+
+  describe("changeQuality", function () {
+    it("returns a new item with quality decreased by one", function () {
+      const item = new Item("truc", 3, 5);
+      const newItem = changeQuality(item).by(-1);
+      expect(newItem.quality).toEqual(4);
+    });
+
+    it("returns a new item with quality increased by one", function () {
+      const item = new Item("truc", 3, 5);
+      const newItem = changeQuality(item).by(+1);
+      expect(newItem.quality).toEqual(6);
+    });
+
+    it("returns a new item with 0 quality", function () {
+      const item = new Item("truc", 3, 5);
+      const newItem = changeQuality(item).by(-item.quality);
+      expect(newItem.quality).toEqual(0);
+    });
+  });
 });
