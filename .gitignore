@@ -3,3 +3,8 @@
 */.gradle/
 .DS_Store
 */node_modules/
+
+/target
+**/*.rs.bk
+*.lock
+*.toml
