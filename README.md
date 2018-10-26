@@ -24,3 +24,13 @@ Fizz
 19
 Buzz
 ... etc up to 100
+
+## Tests
+
+Pour lancer les test avec Docker
+
+- Si c'est la première fois
+`docker build . -t fizzbuzz_docker`
+
+- ensuite
+`docker run -v $(pwd):/app fizzbuzz_docker`
